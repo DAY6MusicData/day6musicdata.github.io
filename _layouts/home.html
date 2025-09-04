@@ -15,30 +15,28 @@ layout: default
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
             <h1>DAY6 Play</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
+            <span class="subheading">순식간에 당신의 재생목록으로</span>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-<header class="masthead" style="background-image: url('/img/bg-support.jpg')">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="banner-heading">
-          <h1>Support Play</h1>
-          <span class="subheading">마이데이 권장 플레이리스트</span>
-          <div class="m_container">
-            <button type="button" onclick="location.href='/support'" class="m_btn m_btn-1">담으러 가기🔥</button></div>
+  <header class="masthead" style="background-image: url('/img/bg-index-serve.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="banner-heading">
+            <h1>Streaming</h1>
+            <span class="subheading">권장 스트리밍 플레이리스트</span>
+            <div class="m_container">
+              <button type="button" onclick="location.href='/support'" class="m_btn m_btn-1">담으러 가기🔥</button></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <div class="container">
     <div class="row">
@@ -52,6 +50,7 @@ layout: default
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h3 class="post-title">{{ post.title }}</h3>
+          </a>
         </article>
 
         <hr>
