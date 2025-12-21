@@ -54,12 +54,19 @@ a{ color: inherit; }
   gap: 10px;
   padding: 10px 12px;
   border-radius: 999px;
-  background: var(--header-bg);
   overflow: auto;
   max-width: 100%;
   -webkit-overflow-scrolling: touch;
-}
 
+  background: linear-gradient(
+    180deg,
+    rgba(204, 197, 192, 1) 0%,
+    rgba(204, 197, 192, 0) 100%
+  );
+
+  border: 0;
+  box-shadow: none;
+}
 .tab{
   display: inline-flex;
   align-items: center;
@@ -138,10 +145,10 @@ a{ color: inherit; }
   color: rgba(255,255,255,.90);
 }
 
-/* headline: 28pt Pretendard Bold */
+/* headline: 26pt Pretendard Bold */
 .headline{
   margin: 0;
-  font-size: 28pt;
+  font-size: 26pt;
   font-weight: 700;
   line-height: 1.18;
   color: #fff;
