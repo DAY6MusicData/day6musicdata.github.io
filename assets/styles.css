@@ -197,6 +197,209 @@ a{ color: inherit; }
   transition: transform .15s ease, background .15s ease;
 }
 
+/* Playlist page */
+.pl{
+  margin-top: 18px;
+  letter-spacing: -0.02em;
+}
+
+/* 검색바 */
+.pl-search{ position: relative; }
+
+.pl-search__field{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background: rgba(255,255,255,.70);
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 999px;
+  padding: 14px 18px;
+  box-shadow: 0 12px 22px rgba(0,0,0,.10);
+}
+
+.pl-search__input{
+  width:100%;
+  border:0;
+  outline:0;
+  background:transparent;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.pl-search__hint{
+  color: rgba(0,0,0,.38);
+  margin-left: 12px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 드롭다운 */
+.pl-dd{
+  margin-top: 14px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(0,0,0,.10);
+  overflow: hidden;
+  box-shadow: 0 18px 36px rgba(0,0,0,.12);
+}
+
+.pl-dd__list{
+  max-height: 420px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.pl-dd__list::-webkit-scrollbar{ display:none; }
+
+.pl-dd__empty{
+  padding: 16px;
+  opacity: .65;
+  font-weight: 600;
+}
+
+/* 결과 row */
+.pl-row{
+  width:100%;
+  display:grid;
+  grid-template-columns: 52px 1fr auto 20px;
+  gap: 12px;
+  align-items:center;
+  padding: 14px 16px;
+  border:0;
+  background: transparent;
+  cursor:pointer;
+  text-align:left;
+}
+
+.pl-row + .pl-row{
+  border-top: 1px solid rgba(0,0,0,.08);
+}
+
+.pl-row__cover{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: rgba(0,0,0,.10);
+  flex-shrink: 0;
+}
+
+.pl-row.no-cover::before{
+  content:"";
+  width:44px; height:44px;
+  border-radius:14px;
+  background: rgba(0,0,0,.10);
+}
+
+.pl-row__title{
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.pl-row__album{
+  margin-top: 2px;
+  font-size: 16px;
+  opacity: .65;
+  font-weight: 600;
+}
+
+.pl-row__len{
+  font-size: 16px;
+  opacity: .9;
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+.pl-row__icon{
+  opacity: .55;
+  font-weight: 800;
+}
+
+/* 담은 곡 */
+.pl-picked{
+  margin-top: 18px;
+}
+
+.pl-picked__top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 10px 2px;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.pl-picked__title{
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.pl-picked__btn{
+  border:0;
+  border-radius: 14px;
+  padding: 12px 16px;
+  background: #2bb34a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.pl-picked__list{ }
+
+.pl-pickedRow{
+  display:grid;
+  grid-template-columns: 52px 1fr auto 34px;
+  gap: 12px;
+  align-items:center;
+  padding: 14px 2px;
+  border-top: 1px solid rgba(0,0,0,.10);
+}
+
+.pl-pickedRow__cover{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: rgba(0,0,0,.10);
+}
+
+.pl-pickedRow.no-cover::before{
+  content:"";
+  width:44px; height:44px;
+  border-radius:14px;
+  background: rgba(0,0,0,.10);
+}
+
+.pl-pickedRow__title{
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.pl-pickedRow__album{
+  margin-top: 2px;
+  font-size: 16px;
+  opacity: .65;
+  font-weight: 600;
+}
+
+.pl-pickedRow__len{
+  font-size: 16px;
+  opacity: .9;
+  font-weight: 700;
+  padding-left: 8px;
+}
+
+.pl-pickedRow__remove{
+  border:0;
+  background: transparent;
+  font-size: 24px;
+  opacity: .55;
+  cursor:pointer;
+}
+
 
 .cta:hover{ transform: translateY(-1px); background: rgba(255,255,255,.85); }
 .cta:focus{ outline: 2px solid rgba(255,255,255,.9); outline-offset: 2px; }
@@ -249,6 +452,7 @@ a{ color: inherit; }
     line-height: 1.18;
     color: #fff;
   text-shadow: 0 8px 20px rgba(0,0,0,.22);
+  
   }
   .cta{
     font-size: 20px;
@@ -263,4 +467,8 @@ a{ color: inherit; }
     margin-top: auto;
     padding-top: 10px;
   }
+  .pl-search__input{ font-size: 20px; }
+  .pl-row__title, .pl-pickedRow__title{ font-size: 17px; }
+  .pl-row__album, .pl-pickedRow__album{ font-size: 15px; }
+  .pl-picked__title{ font-size: 20px; }
 }

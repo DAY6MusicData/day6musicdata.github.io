@@ -5,7 +5,38 @@ description: 원하는 곡을 담아 플레이리스트를 구성하고 공유�
 active: playlist
 ---
 
-<div class="content">
-  <h2 class="page-title">플레이리스트 만들기</h2>
-  <p class="page-desc">여기서 json 불러와서 선택 UI 붙일 거임.</p>
-</div>
+<section class="pl">
+  <!-- 검색바 -->
+  <div class="searchbar" id="searchbar" role="button" tabindex="0" aria-label="검색">
+    <input
+      id="q"
+      class="searchbar__input"
+      type="text"
+      autocomplete="off"
+      placeholder="데이식스 노래를 검색해 보세요"
+      aria-label="곡 검색"
+    />
+    <span class="searchbar__hint">돋보기 아이콘</span>
+  </div>
+
+  <!-- 검색 결과(드롭다운) -->
+  <div class="dropdown" id="dropdown" hidden>
+    <div class="dropdown__list" id="results"></div>
+  </div>
+
+  <!-- 담은 곡 -->
+  <div class="picked">
+    <div class="picked__top">
+      <h2 class="picked__title">현재 담은 곡 <span id="pickedCount">(총 0곡)</span></h2>
+      <button class="picked__btn" id="confirmBtn" type="button">플레이리스트 확정</button>
+    </div>
+
+    <div class="picked__list" id="pickedList"></div>
+  </div>
+</section>
+
+<!-- songs.json 경로를 HTML에서 넘기기 -->
+<script>
+  window.__SONGS_URL__ = "{{ '/data/songs.json' | relative_url }}";
+</script>
+<script src="{{ '/assets/playlist.js' | relative_url }}" defer></script>

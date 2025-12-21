@@ -4,7 +4,6 @@
     {
       "id": 0,
       "album": "The Day",
-      "albumKey": "the-day",
       "title": "Free하게",
       "len": 187,
       "platform": {
@@ -18,7 +17,6 @@
     {
       "id": 1,
       "album": "The Day",
-      "albumKey": "the-day",
       "title": "이상하게 계속 이래",
       "len": 191,
       "platform": {
@@ -32,7 +30,6 @@
     {
       "id": 2,
       "album": "The Day",
-      "albumKey": "the-day",
       "title": "Congratulations",
       "len": 229,
       "platform": {
@@ -46,7 +43,6 @@
     {
       "id": 3,
       "album": "The Day",
-      "albumKey": "the-day",
       "title": "버릇이 됐어",
       "len": 206,
       "platform": {
@@ -60,7 +56,6 @@
     {
       "id": 4,
       "album": "The Day",
-      "albumKey": "the-day",
       "title": "태양처럼",
       "len": 218,
       "platform": {
@@ -74,7 +69,6 @@
     {
       "id": 5,
       "album": "The Day",
-      "albumKey": "the-day",
       "title": "Colors",
       "len": 257,
       "platform": {
@@ -88,7 +82,6 @@
     {
       "id": 6,
       "album": "DAYDREAM",
-      "albumKey": "daydream",
       "title": "First Time",
       "len": 199,
       "platform": {
@@ -102,7 +95,6 @@
     {
       "id": 7,
       "album": "DAYDREAM",
-      "albumKey": "daydream",
       "title": "Blood",
       "len": 208,
       "platform": {
@@ -116,7 +108,6 @@
     {
       "id": 8,
       "album": "DAYDREAM",
-      "albumKey": "daydream",
       "title": "놓아 놓아 놓아",
       "len": 230,
       "platform": {
@@ -130,7 +121,6 @@
     {
       "id": 9,
       "album": "DAYDREAM",
-      "albumKey": "daydream",
       "title": "Sing Me",
       "len": 213,
       "platform": {
@@ -144,7 +134,6 @@
     {
       "id": 10,
       "album": "DAYDREAM",
-      "albumKey": "daydream",
       "title": "바래",
       "len": 244,
       "platform": {
@@ -158,7 +147,6 @@
     {
       "id": 11,
       "album": "DAYDREAM",
-      "albumKey": "daydream",
       "title": "Hunt",
       "len": 206,
       "platform": {
@@ -172,7 +160,6 @@
     {
       "id": 12,
       "album": "SUNRISE",
-      "albumKey": "january",
       "title": "아 왜 (I wait)",
       "len": 218,
       "platform": {
@@ -186,7 +173,6 @@
     {
       "id": 13,
       "album": "SUNRISE",
-      "albumKey": "january",
       "title": "겨울이 간다",
       "len": 187,
       "platform": {
@@ -200,7 +186,6 @@
     {
       "id": 14,
       "album": "SUNRISE",
-      "albumKey": "february",
       "title": "예뻤어",
       "len": 283,
       "platform": {
@@ -214,7 +199,6 @@
     {
       "id": 15,
       "album": "SUNRISE",
-      "albumKey": "february",
       "title": "My Day",
       "len": 180,
       "platform": {
@@ -228,7 +212,6 @@
     {
       "id": 16,
       "album": "SUNRISE",
-      "albumKey": "march",
       "title": "어떻게 말해",
       "len": 201,
       "platform": {
@@ -242,7 +225,6 @@
     {
       "id": 17,
       "album": "SUNRISE",
-      "albumKey": "march",
       "title": "그럴 텐데",
       "len": 223,
       "platform": {
@@ -256,7 +238,6 @@
     {
       "id": 18,
       "album": "SUNRISE",
-      "albumKey": "april",
       "title": "장난 아닌데",
       "len": 194,
       "platform": {
@@ -270,7 +251,6 @@
     {
       "id": 19,
       "album": "SUNRISE",
-      "albumKey": "april",
       "title": "Say Wow",
       "len": 189,
       "platform": {
@@ -284,7 +264,6 @@
     {
       "id": 20,
       "album": "SUNRISE",
-      "albumKey": "may",
       "title": "DANCE DANCE",
       "len": 223,
       "platform": {
@@ -298,7 +277,6 @@
     {
       "id": 21,
       "album": "SUNRISE",
-      "albumKey": "may",
       "title": "Man in a Movie",
       "len": 226,
       "platform": {
@@ -312,7 +290,6 @@
     {
       "id": 22,
       "album": "SUNRISE",
-      "albumKey": "sunrise",
       "title": "오늘은 내게",
       "len": 209,
       "platform": {
@@ -326,7 +303,6 @@
     {
       "id": 23,
       "album": "SUNRISE",
-      "albumKey": "sunrise",
       "title": "반드시 웃는다",
       "len": 227,
       "platform": {
@@ -340,7 +316,6 @@
     {
       "id": 24,
       "album": "SUNRISE",
-      "albumKey": "sunrise",
       "title": "놓아 놓아 놓아 (Rebooted Ver.)",
       "len": 251,
       "platform": {
@@ -354,7 +329,6 @@
     {
       "id": 25,
       "album": "SUNRISE",
-      "albumKey": "sunrise",
       "title": "Congratulations (Final Ver.)",
       "len": 227,
       "platform": {
@@ -368,7 +342,6 @@
     {
       "id": 26,
       "album": "MOONRISE",
-      "albumKey": "july",
       "title": "Hi Hello",
       "len": 232,
       "platform": {
@@ -382,7 +355,6 @@
     {
       "id": 27,
       "album": "MOONRISE",
-      "albumKey": "july",
       "title": "Be Lazy",
       "len": 194,
       "platform": {
@@ -396,7 +368,6 @@
     {
       "id": 28,
       "album": "MOONRISE",
-      "albumKey": "august",
       "title": "좋은걸 뭐 어떡해",
       "len": 232,
       "platform": {
@@ -410,7 +381,6 @@
     {
       "id": 29,
       "album": "MOONRISE",
-      "albumKey": "august",
       "title": "놀래!",
       "len": 196,
       "platform": {
@@ -424,7 +394,6 @@
     {
       "id": 30,
       "album": "MOONRISE",
-      "albumKey": "september",
       "title": "I Loved You",
       "len": 234,
       "platform": {
@@ -438,7 +407,6 @@
     {
       "id": 31,
       "album": "MOONRISE",
-      "albumKey": "september",
       "title": "남겨둘게",
       "len": 234,
       "platform": {
@@ -452,7 +420,6 @@
     {
       "id": 32,
       "album": "MOONRISE",
-      "albumKey": "october",
       "title": "그렇더라고요",
       "len": 226,
       "platform": {
@@ -466,7 +433,6 @@
     {
       "id": 33,
       "album": "MOONRISE",
-      "albumKey": "october",
       "title": "누군가 필요해",
       "len": 218,
       "platform": {
@@ -480,7 +446,6 @@
     {
       "id": 34,
       "album": "MOONRISE",
-      "albumKey": "november",
       "title": "혼자야",
       "len": 224,
       "platform": {
@@ -494,7 +459,6 @@
     {
       "id": 35,
       "album": "MOONRISE",
-      "albumKey": "november",
       "title": "쏟아진다",
       "len": 245,
       "platform": {
@@ -508,7 +472,6 @@
     {
       "id": 36,
       "album": "MOONRISE",
-      "albumKey": "moonrise",
       "title": "Better Better",
       "len": 224,
       "platform": {
@@ -522,7 +485,6 @@
     {
       "id": 37,
       "album": "MOONRISE",
-      "albumKey": "moonrise",
       "title": "좋아합니다",
       "len": 237,
       "platform": {
@@ -536,7 +498,6 @@
     {
       "id": 38,
       "album": "MOONRISE",
-      "albumKey": "moonrise",
       "title": "노력해볼게요",
       "len": 221,
       "platform": {
@@ -550,7 +511,6 @@
     {
       "id": 39,
       "album": "Shoot Me",
-      "albumKey": "shoot-me",
       "title": "WARNING!",
       "len": 205,
       "platform": {
@@ -564,7 +524,6 @@
     {
       "id": 40,
       "album": "Shoot Me",
-      "albumKey": "shoot-me",
       "title": "Shoot Me",
       "len": 175,
       "platform": {
@@ -578,7 +537,6 @@
     {
       "id": 41,
       "album": "Shoot Me",
-      "albumKey": "shoot-me",
       "title": "어쩌다 보니",
       "len": 202,
       "platform": {
@@ -592,7 +550,6 @@
     {
       "id": 42,
       "album": "Shoot Me",
-      "albumKey": "shoot-me",
       "title": "Feeling Good",
       "len": 205,
       "platform": {
@@ -606,7 +563,6 @@
     {
       "id": 43,
       "album": "Shoot Me",
-      "albumKey": "shoot-me",
       "title": "혼잣말",
       "len": 212,
       "platform": {
@@ -620,7 +576,6 @@
     {
       "id": 44,
       "album": "Shoot Me",
-      "albumKey": "shoot-me",
       "title": "원하니까",
       "len": 251,
       "platform": {
@@ -634,7 +589,6 @@
     {
       "id": 45,
       "album": "Beautiful Feeling",
-      "albumKey": "beautiful-feeling",
       "title": "Beautiful Feeling",
       "len": 208,
       "platform": {
@@ -648,7 +602,6 @@
     {
       "id": 46,
       "album": "Chocolate",
-      "albumKey": "chocolate",
       "title": "Chocolate",
       "len": 196,
       "platform": {
@@ -662,7 +615,6 @@
     {
       "id": 47,
       "album": "너는 지금쯤",
-      "albumKey": "doing-now",
       "title": "너는 지금쯤",
       "len": 235,
       "platform": {
@@ -676,7 +628,6 @@
     {
       "id": 48,
       "album": "Remember Us",
-      "albumKey": "remember-us",
       "title": "아픈 길",
       "len": 249,
       "platform": {
@@ -690,7 +641,6 @@
     {
       "id": 49,
       "album": "Remember Us",
-      "albumKey": "remember-us",
       "title": "행복했던 날들이었다",
       "len": 205,
       "platform": {
@@ -704,7 +654,6 @@
     {
       "id": 50,
       "album": "Remember Us",
-      "albumKey": "remember-us",
       "title": "두통",
       "len": 177,
       "platform": {
@@ -718,7 +667,6 @@
     {
       "id": 51,
       "album": "Remember Us",
-      "albumKey": "remember-us",
       "title": "121U",
       "len": 194,
       "platform": {
@@ -732,7 +680,6 @@
     {
       "id": 52,
       "album": "Remember Us",
-      "albumKey": "remember-us",
       "title": "완전 멋지잖아",
       "len": 185,
       "platform": {
@@ -746,7 +693,6 @@
     {
       "id": 53,
       "album": "Remember Us",
-      "albumKey": "remember-us",
       "title": "마라톤",
       "len": 220,
       "platform": {
@@ -760,7 +706,6 @@
     {
       "id": 54,
       "album": "Gravity",
-      "albumKey": "gravity",
       "title": "For me",
       "len": 208,
       "platform": {
@@ -774,7 +719,6 @@
     {
       "id": 55,
       "album": "Gravity",
-      "albumKey": "gravity",
       "title": "한 페이지가 될 수 있게",
       "len": 206,
       "platform": {
@@ -788,7 +732,6 @@
     {
       "id": 56,
       "album": "Gravity",
-      "albumKey": "gravity",
       "title": "How to love",
       "len": 204,
       "platform": {
@@ -802,7 +745,6 @@
     {
       "id": 57,
       "album": "Gravity",
-      "albumKey": "gravity",
       "title": "돌아갈래요",
       "len": 216,
       "platform": {
@@ -816,7 +758,6 @@
     {
       "id": 58,
       "album": "Gravity",
-      "albumKey": "gravity",
       "title": "포장",
       "len": 206,
       "platform": {
@@ -830,7 +771,6 @@
     {
       "id": 59,
       "album": "Gravity",
-      "albumKey": "gravity",
       "title": "Best Part",
       "len": 221,
       "platform": {
@@ -844,7 +784,6 @@
     {
       "id": 60,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "Deep in love",
       "len": 227,
       "platform": {
@@ -858,7 +797,6 @@
     {
       "id": 61,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "Sweet Chaos",
       "len": 227,
       "platform": {
@@ -872,7 +810,6 @@
     {
       "id": 62,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "EMERGENCY",
       "len": 198,
       "platform": {
@@ -886,7 +823,6 @@
     {
       "id": 63,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "Rescue Me",
       "len": 202,
       "platform": {
@@ -900,7 +836,6 @@
     {
       "id": 64,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "365247",
       "len": 173,
       "platform": {
@@ -914,7 +849,6 @@
     {
       "id": 65,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "지금쯤",
       "len": 179,
       "platform": {
@@ -928,7 +862,6 @@
     {
       "id": 66,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "아야야",
       "len": 197,
       "platform": {
@@ -942,7 +875,6 @@
     {
       "id": 67,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "Not Fine (나빠)",
       "len": 216,
       "platform": {
@@ -956,7 +888,6 @@
     {
       "id": 68,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "막말",
       "len": 227,
       "platform": {
@@ -970,7 +901,6 @@
     {
       "id": 69,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "Not Mine",
       "len": 196,
       "platform": {
@@ -984,7 +914,6 @@
     {
       "id": 70,
       "album": "Entropy",
-      "albumKey": "entropy",
       "title": "마치 흘러가는 바람처럼",
       "len": 203,
       "platform": {
@@ -998,7 +927,6 @@
     {
       "id": 71,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "해와 달처럼",
       "len": 205,
       "platform": {
@@ -1012,7 +940,6 @@
     {
       "id": 72,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "Zombie",
       "len": 209,
       "platform": {
@@ -1026,7 +953,6 @@
     {
       "id": 73,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "Tick Tock",
       "len": 233,
       "platform": {
@@ -1040,7 +966,6 @@
     {
       "id": 74,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "Love me or Leave me",
       "len": 223,
       "platform": {
@@ -1054,7 +979,6 @@
     {
       "id": 75,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "때려쳐",
       "len": 228,
       "platform": {
@@ -1068,7 +992,6 @@
     {
       "id": 76,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "1 to 10",
       "len": 188,
       "platform": {
@@ -1082,7 +1005,6 @@
     {
       "id": 77,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "Afraid",
       "len": 213,
       "platform": {
@@ -1096,7 +1018,6 @@
     {
       "id": 78,
       "album": "Demon",
-      "albumKey": "demon",
       "title": "Zombie (English Ver.)",
       "len": 209,
       "platform": {
@@ -1110,7 +1031,6 @@
     {
       "id": 79,
       "album": "Gluon",
-      "albumKey": "gluon",
       "title": "Landing -Intro- (with DENIMALZ 3)",
       "len": 110,
       "platform": {
@@ -1124,7 +1044,6 @@
     {
       "id": 80,
       "album": "Gluon",
-      "albumKey": "gluon",
       "title": "그렇게 너에게 도착하였다 (Landed)",
       "len": 235,
       "platform": {
@@ -1138,7 +1057,6 @@
     {
       "id": 81,
       "album": "Gluon",
-      "albumKey": "gluon",
       "title": "Ocean -Interlude 1- (with DENIMALZ 3)",
       "len": 92,
       "platform": {
@@ -1152,7 +1070,6 @@
     {
       "id": 82,
       "album": "Gluon",
-      "albumKey": "gluon",
       "title": "파도가 끝나는 곳까지",
       "len": 258,
       "platform": {
@@ -1166,7 +1083,6 @@
     {
       "id": 83,
       "album": "Gluon",
-      "albumKey": "gluon",
       "title": "Forest -Interlude 2- (with DENIMALZ 3)",
       "len": 106,
       "platform": {
@@ -1180,7 +1096,6 @@
     {
       "id": 84,
       "album": "Gluon",
-      "albumKey": "gluon",
       "title": "땡스 투 (Thanks to)",
       "len": 257,
       "platform": {
@@ -1194,7 +1109,6 @@
     {
       "id": 85,
       "album": "Gluon",
-      "albumKey": "gluon",
       "title": "To be continued -Outro- (Sung by DENIMALZ 3)",
       "len": 77,
       "platform": {
@@ -1208,7 +1122,6 @@
     {
       "id": 86,
       "album": "비밀리에",
-      "albumKey": "bimilier",
       "title": "사랑, 이게 맞나 봐",
       "len": 203,
       "platform": {
@@ -1222,7 +1135,6 @@
     {
       "id": 87,
       "album": "Negentropy",
-      "albumKey": "negentropy",
       "title": "everyday we fight",
       "len": 210,
       "platform": {
@@ -1236,7 +1148,6 @@
     {
       "id": 88,
       "album": "Negentropy",
-      "albumKey": "negentropy",
       "title": "You make Me",
       "len": 219,
       "platform": {
@@ -1250,7 +1161,6 @@
     {
       "id": 89,
       "album": "Negentropy",
-      "albumKey": "negentropy",
       "title": "Healer",
       "len": 228,
       "platform": {
@@ -1264,7 +1174,6 @@
     {
       "id": 90,
       "album": "Negentropy",
-      "albumKey": "negentropy",
       "title": "둘도 아닌 하나",
       "len": 238,
       "platform": {
@@ -1278,7 +1187,6 @@
     {
       "id": 91,
       "album": "Negentropy",
-      "albumKey": "negentropy",
       "title": "구름 위에서",
       "len": 259,
       "platform": {
@@ -1292,7 +1200,6 @@
     {
       "id": 92,
       "album": "Negentropy",
-      "albumKey": "negentropy",
       "title": "무적 (ONE)",
       "len": 199,
       "platform": {
@@ -1306,7 +1213,6 @@
     {
       "id": 93,
       "album": "Negentropy",
-      "albumKey": "negentropy",
       "title": "우리 앞으로 더 사랑하자",
       "len": 223,
       "platform": {
@@ -1320,7 +1226,6 @@
     {
       "id": 94,
       "album": "Right Through Me",
-      "albumKey": "right-through-me",
       "title": "우린",
       "len": 231,
       "platform": {
@@ -1334,7 +1239,6 @@
     {
       "id": 95,
       "album": "Right Through Me",
-      "albumKey": "right-through-me",
       "title": "뚫고 지나가요",
       "len": 218,
       "platform": {
@@ -1348,7 +1252,6 @@
     {
       "id": 96,
       "album": "Right Through Me",
-      "albumKey": "right-through-me",
       "title": "역대급(WALK)",
       "len": 219,
       "platform": {
@@ -1362,7 +1265,6 @@
     {
       "id": 97,
       "album": "Right Through Me",
-      "albumKey": "right-through-me",
       "title": "네가 원했던 것들",
       "len": 196,
       "platform": {
@@ -1376,7 +1278,6 @@
     {
       "id": 98,
       "album": "Right Through Me",
-      "albumKey": "right-through-me",
       "title": "비극의 결말에서",
       "len": 190,
       "platform": {
@@ -1390,7 +1291,6 @@
     {
       "id": 99,
       "album": "Right Through Me",
-      "albumKey": "right-through-me",
       "title": "나 홀로 집에",
       "len": 203,
       "platform": {
@@ -1404,7 +1304,6 @@
     {
       "id": 100,
       "album": "Right Through Me",
-      "albumKey": "right-through-me",
       "title": "LOVE PARADE",
       "len": 223,
       "platform": {
@@ -1418,7 +1317,6 @@
     {
       "id": 101,
       "album": "ETERNAL",
-      "albumKey": "eternal",
       "title": "베스트 송",
       "len": 221,
       "platform": {
@@ -1432,7 +1330,6 @@
     {
       "id": 102,
       "album": "ETERNAL",
-      "albumKey": "eternal",
       "title": "끝까지 안아 줄게",
       "len": 198,
       "platform": {
@@ -1446,7 +1343,6 @@
     {
       "id": 103,
       "album": "ETERNAL",
-      "albumKey": "eternal",
       "title": "사랑은 얼어 죽을",
       "len": 192,
       "platform": {
@@ -1460,7 +1356,6 @@
     {
       "id": 104,
       "album": "ETERNAL",
-      "albumKey": "eternal",
       "title": "Microphone (Feat. 다운(Dvwn))",
       "len": 197,
       "platform": {
@@ -1474,7 +1369,6 @@
     {
       "id": 105,
       "album": "ETERNAL",
-      "albumKey": "eternal",
       "title": "want to love you",
       "len": 207,
       "platform": {
@@ -1488,7 +1382,6 @@
     {
       "id": 106,
       "album": "ETERNAL",
-      "albumKey": "eternal",
       "title": "그대로 와 줘요",
       "len": 209,
       "platform": {
@@ -1502,7 +1395,6 @@
     {
       "id": 107,
       "album": "ETERNAL",
-      "albumKey": "eternal",
       "title": "잘 자라 내 사람아",
       "len": 244,
       "platform": {
@@ -1516,7 +1408,6 @@
     {
       "id": 108,
       "album": "DOWOON",
-      "albumKey": "dowoon",
       "title": "문득 (Duet with 송희진)",
       "len": 198,
       "platform": {
@@ -1530,7 +1421,6 @@
     {
       "id": 109,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "안녕, 잘 가",
       "len": 228,
       "platform": {
@@ -1544,7 +1434,6 @@
     {
       "id": 110,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "지우게",
       "len": 194,
       "platform": {
@@ -1558,7 +1447,6 @@
     {
       "id": 111,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "소설 속의 작가가 되어",
       "len": 208,
       "platform": {
@@ -1572,7 +1460,6 @@
     {
       "id": 112,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "우리 더 걸을까",
       "len": 182,
       "platform": {
@@ -1586,7 +1473,6 @@
     {
       "id": 113,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "외딴섬의 외톨이",
       "len": 246,
       "platform": {
@@ -1600,7 +1486,6 @@
     {
       "id": 114,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "언젠가 봄은 찾아올 거야",
       "len": 274,
       "platform": {
@@ -1614,7 +1499,6 @@
     {
       "id": 115,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "휴지조각",
       "len": 195,
       "platform": {
@@ -1628,7 +1512,6 @@
     {
       "id": 116,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "늦은 끝",
       "len": 232,
       "platform": {
@@ -1642,7 +1525,6 @@
     {
       "id": 117,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "그리다 보면",
       "len": 229,
       "platform": {
@@ -1656,7 +1538,6 @@
     {
       "id": 118,
       "album": "Pilmography",
-      "albumKey": "pilmography",
       "title": "행운을 빌어 줘",
       "len": 209,
       "platform": {
@@ -1670,7 +1551,6 @@
     {
       "id": 119,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "오늘만은 너만을 이날을",
       "len": 202,
       "platform": {
@@ -1684,7 +1564,6 @@
     {
       "id": 120,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "이것밖에는 없다",
       "len": 201,
       "platform": {
@@ -1698,7 +1577,6 @@
     {
       "id": 121,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "let it be summer",
       "len": 204,
       "platform": {
@@ -1712,7 +1590,6 @@
     {
       "id": 122,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "꿈꾼 (Dreamer)",
       "len": 191,
       "platform": {
@@ -1726,7 +1603,6 @@
     {
       "id": 123,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "Bungee Jumping",
       "len": 202,
       "platform": {
@@ -1740,7 +1616,6 @@
     {
       "id": 124,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "natural",
       "len": 160,
       "platform": {
@@ -1754,7 +1629,6 @@
     {
       "id": 125,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "STRANGE",
       "len": 149,
       "platform": {
@@ -1768,7 +1642,6 @@
     {
       "id": 126,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "SOUL (Feat. 최엘비)",
       "len": 216,
       "platform": {
@@ -1782,7 +1655,6 @@
     {
       "id": 127,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "playground",
       "len": 148,
       "platform": {
@@ -1796,7 +1668,6 @@
     {
       "id": 128,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "babo",
       "len": 185,
       "platform": {
@@ -1810,7 +1681,6 @@
     {
       "id": 129,
       "album": "Letters with notes",
-      "albumKey": "letters-with-notes",
       "title": "what is..",
       "len": 175,
       "platform": {
@@ -1824,7 +1694,6 @@
     {
       "id": 130,
       "album": "Fourever",
-      "albumKey": "fourever",
       "title": "Welcome to the Show",
       "len": 220,
       "platform": {
@@ -1838,7 +1707,6 @@
     {
       "id": 131,
       "album": "Fourever",
-      "albumKey": "fourever",
       "title": "HAPPY",
       "len": 189,
       "platform": {
@@ -1852,7 +1720,6 @@
     {
       "id": 132,
       "album": "Fourever",
-      "albumKey": "fourever",
       "title": "The Power of Love",
       "len": 202,
       "platform": {
@@ -1866,7 +1733,6 @@
     {
       "id": 133,
       "album": "Fourever",
-      "albumKey": "fourever",
       "title": "널 제외한 나의 뇌",
       "len": 166,
       "platform": {
@@ -1880,7 +1746,6 @@
     {
       "id": 134,
       "album": "Fourever",
-      "albumKey": "fourever",
       "title": "나만 슬픈 엔딩",
       "len": 204,
       "platform": {
@@ -1894,7 +1759,6 @@
     {
       "id": 135,
       "album": "Fourever",
-      "albumKey": "fourever",
       "title": "사랑하게 해주라",
       "len": 243,
       "platform": {
@@ -1908,7 +1772,6 @@
     {
       "id": 136,
       "album": "Fourever",
-      "albumKey": "fourever",
       "title": "그게 너의 사랑인지 몰랐어",
       "len": 239,
       "platform": {
@@ -1922,7 +1785,6 @@
     {
       "id": 137,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "괴물",
       "len": 216,
       "platform": {
@@ -1936,7 +1798,6 @@
     {
       "id": 138,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "녹아내려요",
       "len": 165,
       "platform": {
@@ -1950,7 +1811,6 @@
     {
       "id": 139,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "그녀가 웃었다",
       "len": 202,
       "platform": {
@@ -1964,7 +1824,6 @@
     {
       "id": 140,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "망겜",
       "len": 189,
       "platform": {
@@ -1978,7 +1837,6 @@
     {
       "id": 141,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "도와줘요 Rock&Roll",
       "len": 156,
       "platform": {
@@ -1992,7 +1850,6 @@
     {
       "id": 142,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "COUNTER",
       "len": 178,
       "platform": {
@@ -2006,7 +1863,6 @@
     {
       "id": 143,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "I'm Fine",
       "len": 195,
       "platform": {
@@ -2020,7 +1876,6 @@
     {
       "id": 144,
       "album": "Band Aid",
-      "albumKey": "band-aid",
       "title": "아직 거기 살아",
       "len": 199,
       "platform": {
@@ -2034,7 +1889,6 @@
     {
       "id": 145,
       "album": "30",
-      "albumKey": "30",
       "title": "동화 속 아이처럼",
       "len": 180,
       "platform": {
@@ -2048,7 +1902,6 @@
     {
       "id": 146,
       "album": "30",
-      "albumKey": "30",
       "title": "Check Pattern",
       "len": 197,
       "platform": {
@@ -2062,7 +1915,6 @@
     {
       "id": 147,
       "album": "30",
-      "albumKey": "30",
       "title": "아무것도 안 하고 싶다",
       "len": 245,
       "platform": {
@@ -2076,7 +1928,6 @@
     {
       "id": 148,
       "album": "30",
-      "albumKey": "30",
       "title": "어디에도 없는 널",
       "len": 226,
       "platform": {
@@ -2090,7 +1941,6 @@
     {
       "id": 149,
       "album": "30",
-      "albumKey": "30",
       "title": "나무는 결국 겨울을 견뎌낼 거야",
       "len": 203,
       "platform": {
@@ -2104,7 +1954,6 @@
     {
       "id": 150,
       "album": "30",
-      "albumKey": "30",
       "title": "Wednesday Night",
       "len": 159,
       "platform": {
@@ -2118,7 +1967,6 @@
     {
       "id": 151,
       "album": "30",
-      "albumKey": "30",
       "title": "EASY",
       "len": 159,
       "platform": {
@@ -2132,7 +1980,6 @@
     {
       "id": 152,
       "album": "30",
-      "albumKey": "30",
       "title": "You Make Me Up",
       "len": 208,
       "platform": {
@@ -2146,7 +1993,6 @@
     {
       "id": 153,
       "album": "30",
-      "albumKey": "30",
       "title": "I don't wanna lose",
       "len": 208,
       "platform": {
@@ -2160,7 +2006,6 @@
     {
       "id": 154,
       "album": "30",
-      "albumKey": "30",
       "title": "Memories",
       "len": 201,
       "platform": {
@@ -2174,7 +2019,6 @@
     {
       "id": 155,
       "album": "디어엠",
-      "albumKey": "dearm",
       "title": "메이플라떼",
       "len": 233,
       "platform": {
@@ -2188,7 +2032,6 @@
     {
       "id": 156,
       "album": "Maybe Tomorrow",
-      "albumKey": "maybe-tomorrow",
       "title": "Maybe Tomorrow",
       "len": 225,
       "platform": {
@@ -2202,7 +2045,6 @@
     {
       "id": 157,
       "album": "Maybe Tomorrow",
-      "albumKey": "maybe-tomorrow",
       "title": "끝났지",
       "len": 170,
       "platform": {
@@ -2216,7 +2058,6 @@
     {
       "id": 158,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "꿈의 버스",
       "len": 161,
       "platform": {
@@ -2230,7 +2071,6 @@
     {
       "id": 159,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "INSIDE OUT",
       "len": 180,
       "platform": {
@@ -2244,7 +2084,6 @@
     {
       "id": 160,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "해야 뜨지 말아 줘",
       "len": 193,
       "platform": {
@@ -2258,7 +2097,6 @@
     {
       "id": 161,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "Disco Day",
       "len": 186,
       "platform": {
@@ -2272,7 +2110,6 @@
     {
       "id": 162,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "My Way",
       "len": 192,
       "platform": {
@@ -2286,7 +2123,6 @@
     {
       "id": 163,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "별들 앞에서",
       "len": 223,
       "platform": {
@@ -2300,7 +2136,6 @@
     {
       "id": 164,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "Take All My Heart",
       "len": 203,
       "platform": {
@@ -2314,7 +2149,6 @@
     {
       "id": 165,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "날아라! 드림라이더",
       "len": 184,
       "platform": {
@@ -2328,7 +2162,6 @@
     {
       "id": 166,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "드디어 끝나갑니다",
       "len": 182,
       "platform": {
@@ -2342,7 +2175,6 @@
     {
       "id": 167,
       "album": "The DECADE",
-      "albumKey": "the-decade",
       "title": "우리의 계절",
       "len": 236,
       "platform": {
@@ -2356,8 +2188,7 @@
     {
       "id": 168,
       "album": "Lovin′ the Christmas",
-      "albumKey": "lovin-the-christmas",
-      "title": "Lovin' the Christmas",
+      "title": "Lovin′ the Christmas",
       "len": 181,
       "platform": {
         "melon": "600684375",
