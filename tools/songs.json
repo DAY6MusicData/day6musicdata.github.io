@@ -1,0 +1,2202 @@
+{
+  "schema": 1,
+  "songs": [
+    {
+      "id": 0,
+      "album": "The Day",
+      "title": "Free하게",
+      "len": 187,
+      "platform": {
+        "melon": "7844372",
+        "genie": "84964151",
+        "bugs": "4551004",
+        "vibe": "5701352",
+        "flo": "4551004"
+      }
+    },
+    {
+      "id": 1,
+      "album": "The Day",
+      "title": "이상하게 계속 이래",
+      "len": 191,
+      "platform": {
+        "melon": "7844373",
+        "genie": "84964152",
+        "bugs": "4551005",
+        "vibe": "5701356",
+        "flo": "4551005"
+      }
+    },
+    {
+      "id": 2,
+      "album": "The Day",
+      "title": "Congratulations",
+      "len": 229,
+      "platform": {
+        "melon": "7844374",
+        "genie": "84964153",
+        "bugs": "4551006",
+        "vibe": "5701361",
+        "flo": "4551006"
+      }
+    },
+    {
+      "id": 3,
+      "album": "The Day",
+      "title": "버릇이 됐어",
+      "len": 206,
+      "platform": {
+        "melon": "7844375",
+        "genie": "84964154",
+        "bugs": "4551007",
+        "vibe": "5701347",
+        "flo": "4551007"
+      }
+    },
+    {
+      "id": 4,
+      "album": "The Day",
+      "title": "태양처럼",
+      "len": 218,
+      "platform": {
+        "melon": "7844376",
+        "genie": "84964155",
+        "bugs": "4551008",
+        "vibe": "5701349",
+        "flo": "4551008"
+      }
+    },
+    {
+      "id": 5,
+      "album": "The Day",
+      "title": "Colors",
+      "len": 257,
+      "platform": {
+        "melon": "7844377",
+        "genie": "84964156",
+        "bugs": "4551009",
+        "vibe": "5701354",
+        "flo": "4551009"
+      }
+    },
+    {
+      "id": 6,
+      "album": "DAYDREAM",
+      "title": "First Time",
+      "len": 199,
+      "platform": {
+        "melon": "8120282",
+        "genie": "86089284",
+        "bugs": "30203510",
+        "vibe": "6049320",
+        "flo": "30203510"
+      }
+    },
+    {
+      "id": 7,
+      "album": "DAYDREAM",
+      "title": "Blood",
+      "len": 208,
+      "platform": {
+        "melon": "8120283",
+        "genie": "86089285",
+        "bugs": "30203511",
+        "vibe": "6049321",
+        "flo": "30203511"
+      }
+    },
+    {
+      "id": 8,
+      "album": "DAYDREAM",
+      "title": "놓아 놓아 놓아",
+      "len": 230,
+      "platform": {
+        "melon": "8120284",
+        "genie": "86112660",
+        "bugs": "30203512",
+        "vibe": "6049322",
+        "flo": "30203512"
+      }
+    },
+    {
+      "id": 9,
+      "album": "DAYDREAM",
+      "title": "Sing Me",
+      "len": 213,
+      "platform": {
+        "melon": "8120285",
+        "genie": "86112661",
+        "bugs": "30203513",
+        "vibe": "6049323",
+        "flo": "30203513"
+      }
+    },
+    {
+      "id": 10,
+      "album": "DAYDREAM",
+      "title": "바래",
+      "len": 244,
+      "platform": {
+        "melon": "8120286",
+        "genie": "86112662",
+        "bugs": "30203514",
+        "vibe": "6049324",
+        "flo": "30203514"
+      }
+    },
+    {
+      "id": 11,
+      "album": "DAYDREAM",
+      "title": "Hunt",
+      "len": 206,
+      "platform": {
+        "melon": "8120287",
+        "genie": "86112663",
+        "bugs": "30203515",
+        "vibe": "6049325",
+        "flo": "30203515"
+      }
+    },
+    {
+      "id": 12,
+      "album": "SUNRISE",
+      "title": "아 왜 (I wait)",
+      "len": 218,
+      "platform": {
+        "melon": "30189029",
+        "genie": "86866728",
+        "bugs": "30511020",
+        "vibe": "16035922",
+        "flo": "30511020"
+      }
+    },
+    {
+      "id": 13,
+      "album": "SUNRISE",
+      "title": "겨울이 간다",
+      "len": 187,
+      "platform": {
+        "melon": "30189030",
+        "genie": "86866729",
+        "bugs": "30511021",
+        "vibe": "16035923",
+        "flo": "30511021"
+      }
+    },
+    {
+      "id": 14,
+      "album": "SUNRISE",
+      "title": "예뻤어",
+      "len": 283,
+      "platform": {
+        "melon": "30232719",
+        "genie": "86931930",
+        "bugs": "30540153",
+        "vibe": "16081363",
+        "flo": "30540153"
+      }
+    },
+    {
+      "id": 15,
+      "album": "SUNRISE",
+      "title": "My Day",
+      "len": 180,
+      "platform": {
+        "melon": "30233080",
+        "genie": "86931931",
+        "bugs": "30540154",
+        "vibe": "16081364",
+        "flo": "30540154"
+      }
+    },
+    {
+      "id": 16,
+      "album": "SUNRISE",
+      "title": "어떻게 말해",
+      "len": 201,
+      "platform": {
+        "melon": "30284609",
+        "genie": "86990352",
+        "bugs": "30573080",
+        "vibe": "16473414",
+        "flo": "30573080"
+      }
+    },
+    {
+      "id": 17,
+      "album": "SUNRISE",
+      "title": "그럴 텐데",
+      "len": 223,
+      "platform": {
+        "melon": "30285386",
+        "genie": "86990353",
+        "bugs": "30573081",
+        "vibe": "16473415",
+        "flo": "30573081"
+      }
+    },
+    {
+      "id": 18,
+      "album": "SUNRISE",
+      "title": "장난 아닌데",
+      "len": 194,
+      "platform": {
+        "melon": "30345502",
+        "genie": "87064418",
+        "bugs": "30612023",
+        "vibe": "17409146",
+        "flo": "30612023"
+      }
+    },
+    {
+      "id": 19,
+      "album": "SUNRISE",
+      "title": "Say Wow",
+      "len": 189,
+      "platform": {
+        "melon": "30345503",
+        "genie": "87064419",
+        "bugs": "30612024",
+        "vibe": "17409156",
+        "flo": "30612024"
+      }
+    },
+    {
+      "id": 20,
+      "album": "SUNRISE",
+      "title": "DANCE DANCE",
+      "len": 223,
+      "platform": {
+        "melon": "30399493",
+        "genie": "87121533",
+        "bugs": "30646154",
+        "vibe": "17735999",
+        "flo": "30646154"
+      }
+    },
+    {
+      "id": 21,
+      "album": "SUNRISE",
+      "title": "Man in a Movie",
+      "len": 226,
+      "platform": {
+        "melon": "30399494",
+        "genie": "87121534",
+        "bugs": "30646155",
+        "vibe": "17736000",
+        "flo": "30646155"
+      }
+    },
+    {
+      "id": 22,
+      "album": "SUNRISE",
+      "title": "오늘은 내게",
+      "len": 209,
+      "platform": {
+        "melon": "30457471",
+        "genie": "87185618",
+        "bugs": "30677527",
+        "vibe": "17836612",
+        "flo": "30677527"
+      }
+    },
+    {
+      "id": 23,
+      "album": "SUNRISE",
+      "title": "반드시 웃는다",
+      "len": 227,
+      "platform": {
+        "melon": "30457472",
+        "genie": "87185619",
+        "bugs": "30677528",
+        "vibe": "17836615",
+        "flo": "30677528"
+      }
+    },
+    {
+      "id": 24,
+      "album": "SUNRISE",
+      "title": "놓아 놓아 놓아 (Rebooted Ver.)",
+      "len": 251,
+      "platform": {
+        "melon": "30457476",
+        "genie": "87185623",
+        "bugs": "30677532",
+        "vibe": "17836617",
+        "flo": "30677532"
+      }
+    },
+    {
+      "id": 25,
+      "album": "SUNRISE",
+      "title": "Congratulations (Final Ver.)",
+      "len": 227,
+      "platform": {
+        "melon": "30457484",
+        "genie": "87185631",
+        "bugs": "30677540",
+        "vibe": "17836625",
+        "flo": "30677540"
+      }
+    },
+    {
+      "id": 26,
+      "album": "MOONRISE",
+      "title": "Hi Hello",
+      "len": 232,
+      "platform": {
+        "melon": "30507915",
+        "genie": "87264764",
+        "bugs": "30708337",
+        "vibe": "18419728",
+        "flo": "30708337"
+      }
+    },
+    {
+      "id": 27,
+      "album": "MOONRISE",
+      "title": "Be Lazy",
+      "len": 194,
+      "platform": {
+        "melon": "30508688",
+        "genie": "87264765",
+        "bugs": "30708338",
+        "vibe": "18419729",
+        "flo": "30708338"
+      }
+    },
+    {
+      "id": 28,
+      "album": "MOONRISE",
+      "title": "좋은걸 뭐 어떡해",
+      "len": 232,
+      "platform": {
+        "melon": "30566474",
+        "genie": "87359516",
+        "bugs": "30742600",
+        "vibe": "18676775",
+        "flo": "30742600"
+      }
+    },
+    {
+      "id": 29,
+      "album": "MOONRISE",
+      "title": "놀래!",
+      "len": 196,
+      "platform": {
+        "melon": "30566475",
+        "genie": "87359517",
+        "bugs": "30742601",
+        "vibe": "18676777",
+        "flo": "30742601"
+      }
+    },
+    {
+      "id": 30,
+      "album": "MOONRISE",
+      "title": "I Loved You",
+      "len": 234,
+      "platform": {
+        "melon": "30617942",
+        "genie": "87415867",
+        "bugs": "30772387",
+        "vibe": "18939330",
+        "flo": "30772387"
+      }
+    },
+    {
+      "id": 31,
+      "album": "MOONRISE",
+      "title": "남겨둘게",
+      "len": 234,
+      "platform": {
+        "melon": "30617943",
+        "genie": "87415868",
+        "bugs": "30772388",
+        "vibe": "18939331",
+        "flo": "30772388"
+      }
+    },
+    {
+      "id": 32,
+      "album": "MOONRISE",
+      "title": "그렇더라고요",
+      "len": 226,
+      "platform": {
+        "melon": "30658626",
+        "genie": "87463141",
+        "bugs": "30800908",
+        "vibe": "19183554",
+        "flo": "30800908"
+      }
+    },
+    {
+      "id": 33,
+      "album": "MOONRISE",
+      "title": "누군가 필요해",
+      "len": 218,
+      "platform": {
+        "melon": "30658627",
+        "genie": "87463142",
+        "bugs": "30800909",
+        "vibe": "19183552",
+        "flo": "30800909"
+      }
+    },
+    {
+      "id": 34,
+      "album": "MOONRISE",
+      "title": "혼자야",
+      "len": 224,
+      "platform": {
+        "melon": "30711862",
+        "genie": "87527108",
+        "bugs": "30833861",
+        "vibe": "19738258",
+        "flo": "30833861"
+      }
+    },
+    {
+      "id": 35,
+      "album": "MOONRISE",
+      "title": "쏟아진다",
+      "len": 245,
+      "platform": {
+        "melon": "30711863",
+        "genie": "87527109",
+        "bugs": "30833862",
+        "vibe": "19738184",
+        "flo": "30833862"
+      }
+    },
+    {
+      "id": 36,
+      "album": "MOONRISE",
+      "title": "Better Better",
+      "len": 224,
+      "platform": {
+        "melon": "30771999",
+        "genie": "87591822",
+        "bugs": "30872542",
+        "vibe": "20121086",
+        "flo": "30872542"
+      }
+    },
+    {
+      "id": 37,
+      "album": "MOONRISE",
+      "title": "좋아합니다",
+      "len": 237,
+      "platform": {
+        "melon": "30772000",
+        "genie": "87591823",
+        "bugs": "30872543",
+        "vibe": "20121084",
+        "flo": "30872543"
+      }
+    },
+    {
+      "id": 38,
+      "album": "MOONRISE",
+      "title": "노력해볼게요",
+      "len": 221,
+      "platform": {
+        "melon": "30772011",
+        "genie": "87591834",
+        "bugs": "30872554",
+        "vibe": "20121097",
+        "flo": "30872554"
+      }
+    },
+    {
+      "id": 39,
+      "album": "Shoot Me",
+      "title": "WARNING!",
+      "len": 205,
+      "platform": {
+        "melon": "31149436",
+        "genie": "88072513",
+        "bugs": "31120686",
+        "vibe": "21408918",
+        "flo": "31120686"
+      }
+    },
+    {
+      "id": 40,
+      "album": "Shoot Me",
+      "title": "Shoot Me",
+      "len": 175,
+      "platform": {
+        "melon": "31149437",
+        "genie": "88072514",
+        "bugs": "31120687",
+        "vibe": "21408915",
+        "flo": "31120687"
+      }
+    },
+    {
+      "id": 41,
+      "album": "Shoot Me",
+      "title": "어쩌다 보니",
+      "len": 202,
+      "platform": {
+        "melon": "31149438",
+        "genie": "88072515",
+        "bugs": "31120688",
+        "vibe": "21408920",
+        "flo": "31120688"
+      }
+    },
+    {
+      "id": 42,
+      "album": "Shoot Me",
+      "title": "Feeling Good",
+      "len": 205,
+      "platform": {
+        "melon": "31149439",
+        "genie": "88072516",
+        "bugs": "31120689",
+        "vibe": "21408916",
+        "flo": "31120689"
+      }
+    },
+    {
+      "id": 43,
+      "album": "Shoot Me",
+      "title": "혼잣말",
+      "len": 212,
+      "platform": {
+        "melon": "31149440",
+        "genie": "88072517",
+        "bugs": "31120690",
+        "vibe": "21408919",
+        "flo": "31120690"
+      }
+    },
+    {
+      "id": 44,
+      "album": "Shoot Me",
+      "title": "원하니까",
+      "len": 251,
+      "platform": {
+        "melon": "31149441",
+        "genie": "88072518",
+        "bugs": "31120691",
+        "vibe": "21408917",
+        "flo": "31120691"
+      }
+    },
+    {
+      "id": 45,
+      "album": "Beautiful Feeling",
+      "title": "Beautiful Feeling",
+      "len": 208,
+      "platform": {
+        "melon": "31295149",
+        "genie": "88233287",
+        "bugs": "31225862",
+        "vibe": "21712039",
+        "flo": "31225862"
+      }
+    },
+    {
+      "id": 46,
+      "album": "Chocolate",
+      "title": "Chocolate",
+      "len": 196,
+      "platform": {
+        "melon": "31412373",
+        "genie": "88362467",
+        "bugs": "31304162",
+        "vibe": "22531444",
+        "flo": "31304162"
+      }
+    },
+    {
+      "id": 47,
+      "album": "너는 지금쯤",
+      "title": "너는 지금쯤",
+      "len": 235,
+      "platform": {
+        "melon": "31431163",
+        "genie": "88389337",
+        "bugs": "31318643",
+        "vibe": "22886295",
+        "flo": "31318643"
+      }
+    },
+    {
+      "id": 48,
+      "album": "Remember Us",
+      "title": "아픈 길",
+      "len": 249,
+      "platform": {
+        "melon": "31481699",
+        "genie": "88455412",
+        "bugs": "31360121",
+        "vibe": "23177550",
+        "flo": "31360121"
+      }
+    },
+    {
+      "id": 49,
+      "album": "Remember Us",
+      "title": "행복했던 날들이었다",
+      "len": 205,
+      "platform": {
+        "melon": "31481700",
+        "genie": "88455413",
+        "bugs": "31360122",
+        "vibe": "23177552",
+        "flo": "31360122"
+      }
+    },
+    {
+      "id": 50,
+      "album": "Remember Us",
+      "title": "두통",
+      "len": 177,
+      "platform": {
+        "melon": "31481701",
+        "genie": "88455414",
+        "bugs": "31360123",
+        "vibe": "23177555",
+        "flo": "31360123"
+      }
+    },
+    {
+      "id": 51,
+      "album": "Remember Us",
+      "title": "121U",
+      "len": 194,
+      "platform": {
+        "melon": "31481702",
+        "genie": "88455415",
+        "bugs": "31360124",
+        "vibe": "23177558",
+        "flo": "31360124"
+      }
+    },
+    {
+      "id": 52,
+      "album": "Remember Us",
+      "title": "완전 멋지잖아",
+      "len": 185,
+      "platform": {
+        "melon": "31481703",
+        "genie": "88455416",
+        "bugs": "31360125",
+        "vibe": "23177561",
+        "flo": "31360125"
+      }
+    },
+    {
+      "id": 53,
+      "album": "Remember Us",
+      "title": "마라톤",
+      "len": 220,
+      "platform": {
+        "melon": "31481704",
+        "genie": "88455417",
+        "bugs": "31360126",
+        "vibe": "23177562",
+        "flo": "31360126"
+      }
+    },
+    {
+      "id": 54,
+      "album": "Gravity",
+      "title": "For me",
+      "len": 208,
+      "platform": {
+        "melon": "31927274",
+        "genie": "89220626",
+        "bugs": "31650948",
+        "vibe": "27852477",
+        "flo": "427164275"
+      }
+    },
+    {
+      "id": 55,
+      "album": "Gravity",
+      "title": "한 페이지가 될 수 있게",
+      "len": 206,
+      "platform": {
+        "melon": "31927275",
+        "genie": "89220627",
+        "bugs": "31650949",
+        "vibe": "27852478",
+        "flo": "427164276"
+      }
+    },
+    {
+      "id": 56,
+      "album": "Gravity",
+      "title": "How to love",
+      "len": 204,
+      "platform": {
+        "melon": "31927276",
+        "genie": "89220628",
+        "bugs": "31650950",
+        "vibe": "27852479",
+        "flo": "427164277"
+      }
+    },
+    {
+      "id": 57,
+      "album": "Gravity",
+      "title": "돌아갈래요",
+      "len": 216,
+      "platform": {
+        "melon": "31927277",
+        "genie": "89220629",
+        "bugs": "31650951",
+        "vibe": "27852481",
+        "flo": "427164278"
+      }
+    },
+    {
+      "id": 58,
+      "album": "Gravity",
+      "title": "포장",
+      "len": 206,
+      "platform": {
+        "melon": "31927278",
+        "genie": "89220630",
+        "bugs": "31650952",
+        "vibe": "27852480",
+        "flo": "427164279"
+      }
+    },
+    {
+      "id": 59,
+      "album": "Gravity",
+      "title": "Best Part",
+      "len": 221,
+      "platform": {
+        "melon": "31927279",
+        "genie": "89220631",
+        "bugs": "31650953",
+        "vibe": "27852482",
+        "flo": "427164280"
+      }
+    },
+    {
+      "id": 60,
+      "album": "Entropy",
+      "title": "Deep in love",
+      "len": 227,
+      "platform": {
+        "melon": "32115575",
+        "genie": "89472159",
+        "bugs": "31728992",
+        "vibe": "30184802",
+        "flo": "431985999"
+      }
+    },
+    {
+      "id": 61,
+      "album": "Entropy",
+      "title": "Sweet Chaos",
+      "len": 227,
+      "platform": {
+        "melon": "32115576",
+        "genie": "89472160",
+        "bugs": "31728993",
+        "vibe": "30165478",
+        "flo": "431986000"
+      }
+    },
+    {
+      "id": 62,
+      "album": "Entropy",
+      "title": "EMERGENCY",
+      "len": 198,
+      "platform": {
+        "melon": "32115577",
+        "genie": "89472161",
+        "bugs": "31728994",
+        "vibe": "30184807",
+        "flo": "431986001"
+      }
+    },
+    {
+      "id": 63,
+      "album": "Entropy",
+      "title": "Rescue Me",
+      "len": 202,
+      "platform": {
+        "melon": "32115578",
+        "genie": "89472162",
+        "bugs": "31728995",
+        "vibe": "30184803",
+        "flo": "431986002"
+      }
+    },
+    {
+      "id": 64,
+      "album": "Entropy",
+      "title": "365247",
+      "len": 173,
+      "platform": {
+        "melon": "32115579",
+        "genie": "89472163",
+        "bugs": "31728996",
+        "vibe": "30184808",
+        "flo": "431986003"
+      }
+    },
+    {
+      "id": 65,
+      "album": "Entropy",
+      "title": "지금쯤",
+      "len": 179,
+      "platform": {
+        "melon": "32115580",
+        "genie": "89472164",
+        "bugs": "31728997",
+        "vibe": "30184804",
+        "flo": "431986004"
+      }
+    },
+    {
+      "id": 66,
+      "album": "Entropy",
+      "title": "아야야",
+      "len": 197,
+      "platform": {
+        "melon": "32115581",
+        "genie": "89472165",
+        "bugs": "31728998",
+        "vibe": "30184805",
+        "flo": "431986005"
+      }
+    },
+    {
+      "id": 67,
+      "album": "Entropy",
+      "title": "Not Fine (나빠)",
+      "len": 216,
+      "platform": {
+        "melon": "32115582",
+        "genie": "89472166",
+        "bugs": "31728999",
+        "vibe": "30184806",
+        "flo": "431986006"
+      }
+    },
+    {
+      "id": 68,
+      "album": "Entropy",
+      "title": "막말",
+      "len": 227,
+      "platform": {
+        "melon": "32115583",
+        "genie": "89472167",
+        "bugs": "31729000",
+        "vibe": "30184809",
+        "flo": "431986007"
+      }
+    },
+    {
+      "id": 69,
+      "album": "Entropy",
+      "title": "Not Mine",
+      "len": 196,
+      "platform": {
+        "melon": "32115584",
+        "genie": "89472168",
+        "bugs": "31729001",
+        "vibe": "30184810",
+        "flo": "431986008"
+      }
+    },
+    {
+      "id": 70,
+      "album": "Entropy",
+      "title": "마치 흘러가는 바람처럼",
+      "len": 203,
+      "platform": {
+        "melon": "32115585",
+        "genie": "89472169",
+        "bugs": "31729002",
+        "vibe": "30184811",
+        "flo": "431986009"
+      }
+    },
+    {
+      "id": 71,
+      "album": "Demon",
+      "title": "해와 달처럼",
+      "len": 205,
+      "platform": {
+        "melon": "32586847",
+        "genie": "90194895",
+        "bugs": "31908732",
+        "vibe": "40319205",
+        "flo": "435475347"
+      }
+    },
+    {
+      "id": 72,
+      "album": "Demon",
+      "title": "Zombie",
+      "len": 209,
+      "platform": {
+        "melon": "32586848",
+        "genie": "90194896",
+        "bugs": "31908733",
+        "vibe": "40319204",
+        "flo": "435475348"
+      }
+    },
+    {
+      "id": 73,
+      "album": "Demon",
+      "title": "Tick Tock",
+      "len": 233,
+      "platform": {
+        "melon": "32586849",
+        "genie": "90194897",
+        "bugs": "31908734",
+        "vibe": "40319206",
+        "flo": "435475349"
+      }
+    },
+    {
+      "id": 74,
+      "album": "Demon",
+      "title": "Love me or Leave me",
+      "len": 223,
+      "platform": {
+        "melon": "32586850",
+        "genie": "90194898",
+        "bugs": "31908735",
+        "vibe": "40319207",
+        "flo": "435475350"
+      }
+    },
+    {
+      "id": 75,
+      "album": "Demon",
+      "title": "때려쳐",
+      "len": 228,
+      "platform": {
+        "melon": "32586851",
+        "genie": "90194899",
+        "bugs": "31908736",
+        "vibe": "40319208",
+        "flo": "435475351"
+      }
+    },
+    {
+      "id": 76,
+      "album": "Demon",
+      "title": "1 to 10",
+      "len": 188,
+      "platform": {
+        "melon": "32586852",
+        "genie": "90194900",
+        "bugs": "31908737",
+        "vibe": "40319209",
+        "flo": "435475352"
+      }
+    },
+    {
+      "id": 77,
+      "album": "Demon",
+      "title": "Afraid",
+      "len": 213,
+      "platform": {
+        "melon": "32586853",
+        "genie": "90194901",
+        "bugs": "31908738",
+        "vibe": "40319210",
+        "flo": "435475353"
+      }
+    },
+    {
+      "id": 78,
+      "album": "Demon",
+      "title": "Zombie (English Ver.)",
+      "len": 209,
+      "platform": {
+        "melon": "32586854",
+        "genie": "90194902",
+        "bugs": "31908739",
+        "vibe": "40319211",
+        "flo": "435475354"
+      }
+    },
+    {
+      "id": 79,
+      "album": "Gluon",
+      "title": "Landing -Intro- (with DENIMALZ 3)",
+      "len": 110,
+      "platform": {
+        "melon": "32892355",
+        "genie": "90756152",
+        "bugs": "32006764",
+        "vibe": "41909362",
+        "flo": "437807412"
+      }
+    },
+    {
+      "id": 80,
+      "album": "Gluon",
+      "title": "그렇게 너에게 도착하였다 (Landed)",
+      "len": 235,
+      "platform": {
+        "melon": "32892356",
+        "genie": "90756153",
+        "bugs": "32006765",
+        "vibe": "41909363",
+        "flo": "437807413"
+      }
+    },
+    {
+      "id": 81,
+      "album": "Gluon",
+      "title": "Ocean -Interlude 1- (with DENIMALZ 3)",
+      "len": 92,
+      "platform": {
+        "melon": "32892357",
+        "genie": "90756154",
+        "bugs": "32006766",
+        "vibe": "41909364",
+        "flo": "437807414"
+      }
+    },
+    {
+      "id": 82,
+      "album": "Gluon",
+      "title": "파도가 끝나는 곳까지",
+      "len": 258,
+      "platform": {
+        "melon": "32892358",
+        "genie": "90756155",
+        "bugs": "32006767",
+        "vibe": "41909365",
+        "flo": "437807415"
+      }
+    },
+    {
+      "id": 83,
+      "album": "Gluon",
+      "title": "Forest -Interlude 2- (with DENIMALZ 3)",
+      "len": 106,
+      "platform": {
+        "melon": "32892359",
+        "genie": "90756156",
+        "bugs": "32006768",
+        "vibe": "41909367",
+        "flo": "437807416"
+      }
+    },
+    {
+      "id": 84,
+      "album": "Gluon",
+      "title": "땡스 투 (Thanks to)",
+      "len": 257,
+      "platform": {
+        "melon": "32892360",
+        "genie": "90756157",
+        "bugs": "32006769",
+        "vibe": "41909366",
+        "flo": "437807417"
+      }
+    },
+    {
+      "id": 85,
+      "album": "Gluon",
+      "title": "To be continued -Outro- (Sung by DENIMALZ 3)",
+      "len": 77,
+      "platform": {
+        "melon": "32892361",
+        "genie": "90756158",
+        "bugs": "32006770",
+        "vibe": "41909368",
+        "flo": "437807418"
+      }
+    },
+    {
+      "id": 86,
+      "album": "비밀리에",
+      "title": "사랑, 이게 맞나 봐",
+      "len": 203,
+      "platform": {
+        "melon": "33210835",
+        "genie": "91978161",
+        "bugs": "32124930",
+        "vibe": "44037981",
+        "flo": "442542716"
+      }
+    },
+    {
+      "id": 87,
+      "album": "Negentropy",
+      "title": "everyday we fight",
+      "len": 210,
+      "platform": {
+        "melon": "33422387",
+        "genie": "93002280",
+        "bugs": "32209763",
+        "vibe": "47007043",
+        "flo": "445176446"
+      }
+    },
+    {
+      "id": 88,
+      "album": "Negentropy",
+      "title": "You make Me",
+      "len": 219,
+      "platform": {
+        "melon": "33422388",
+        "genie": "93002281",
+        "bugs": "32209764",
+        "vibe": "46822861",
+        "flo": "445176447"
+      }
+    },
+    {
+      "id": 89,
+      "album": "Negentropy",
+      "title": "Healer",
+      "len": 228,
+      "platform": {
+        "melon": "33422389",
+        "genie": "93002282",
+        "bugs": "32209765",
+        "vibe": "47007042",
+        "flo": "445176448"
+      }
+    },
+    {
+      "id": 90,
+      "album": "Negentropy",
+      "title": "둘도 아닌 하나",
+      "len": 238,
+      "platform": {
+        "melon": "33422390",
+        "genie": "93002283",
+        "bugs": "32209766",
+        "vibe": "47007046",
+        "flo": "445176449"
+      }
+    },
+    {
+      "id": 91,
+      "album": "Negentropy",
+      "title": "구름 위에서",
+      "len": 259,
+      "platform": {
+        "melon": "33422391",
+        "genie": "93002284",
+        "bugs": "32209767",
+        "vibe": "47007047",
+        "flo": "445176450"
+      }
+    },
+    {
+      "id": 92,
+      "album": "Negentropy",
+      "title": "무적 (ONE)",
+      "len": 199,
+      "platform": {
+        "melon": "33422392",
+        "genie": "93002285",
+        "bugs": "32209768",
+        "vibe": "47007045",
+        "flo": "445176451"
+      }
+    },
+    {
+      "id": 93,
+      "album": "Negentropy",
+      "title": "우리 앞으로 더 사랑하자",
+      "len": 223,
+      "platform": {
+        "melon": "33422393",
+        "genie": "93002286",
+        "bugs": "32209769",
+        "vibe": "47007044",
+        "flo": "445176452"
+      }
+    },
+    {
+      "id": 94,
+      "album": "Right Through Me",
+      "title": "우린",
+      "len": 231,
+      "platform": {
+        "melon": "33649709",
+        "genie": "93688029",
+        "bugs": "32276896",
+        "vibe": "49626053",
+        "flo": "446726519"
+      }
+    },
+    {
+      "id": 95,
+      "album": "Right Through Me",
+      "title": "뚫고 지나가요",
+      "len": 218,
+      "platform": {
+        "melon": "33649710",
+        "genie": "93688030",
+        "bugs": "32276897",
+        "vibe": "49626054",
+        "flo": "446726520"
+      }
+    },
+    {
+      "id": 96,
+      "album": "Right Through Me",
+      "title": "역대급(WALK)",
+      "len": 219,
+      "platform": {
+        "melon": "33649711",
+        "genie": "93688031",
+        "bugs": "32276898",
+        "vibe": "49626055",
+        "flo": "446726521"
+      }
+    },
+    {
+      "id": 97,
+      "album": "Right Through Me",
+      "title": "네가 원했던 것들",
+      "len": 196,
+      "platform": {
+        "melon": "33649712",
+        "genie": "93688032",
+        "bugs": "32276899",
+        "vibe": "49626056",
+        "flo": "446726522"
+      }
+    },
+    {
+      "id": 98,
+      "album": "Right Through Me",
+      "title": "비극의 결말에서",
+      "len": 190,
+      "platform": {
+        "melon": "33649713",
+        "genie": "93688033",
+        "bugs": "32276900",
+        "vibe": "49626058",
+        "flo": "446726523"
+      }
+    },
+    {
+      "id": 99,
+      "album": "Right Through Me",
+      "title": "나 홀로 집에",
+      "len": 203,
+      "platform": {
+        "melon": "33649714",
+        "genie": "93688034",
+        "bugs": "32276901",
+        "vibe": "49626057",
+        "flo": "446726524"
+      }
+    },
+    {
+      "id": 100,
+      "album": "Right Through Me",
+      "title": "LOVE PARADE",
+      "len": 223,
+      "platform": {
+        "melon": "33649715",
+        "genie": "93688035",
+        "bugs": "32276902",
+        "vibe": "49626059",
+        "flo": "446726525"
+      }
+    },
+    {
+      "id": 101,
+      "album": "ETERNAL",
+      "title": "베스트 송",
+      "len": 221,
+      "platform": {
+        "melon": "33903431",
+        "genie": "94227262",
+        "bugs": "32330800",
+        "vibe": "50607170",
+        "flo": "447457760"
+      }
+    },
+    {
+      "id": 102,
+      "album": "ETERNAL",
+      "title": "끝까지 안아 줄게",
+      "len": 198,
+      "platform": {
+        "melon": "33903432",
+        "genie": "94227263",
+        "bugs": "32330801",
+        "vibe": "50607171",
+        "flo": "447457761"
+      }
+    },
+    {
+      "id": 103,
+      "album": "ETERNAL",
+      "title": "사랑은 얼어 죽을",
+      "len": 192,
+      "platform": {
+        "melon": "33903433",
+        "genie": "94227264",
+        "bugs": "32330802",
+        "vibe": "50607172",
+        "flo": "447457762"
+      }
+    },
+    {
+      "id": 104,
+      "album": "ETERNAL",
+      "title": "Microphone (Feat. 다운(Dvwn))",
+      "len": 197,
+      "platform": {
+        "melon": "33903434",
+        "genie": "94227265",
+        "bugs": "32330803",
+        "vibe": "50607174",
+        "flo": "447457763"
+      }
+    },
+    {
+      "id": 105,
+      "album": "ETERNAL",
+      "title": "want to love you",
+      "len": 207,
+      "platform": {
+        "melon": "33903435",
+        "genie": "94227266",
+        "bugs": "32330804",
+        "vibe": "50607175",
+        "flo": "447457764"
+      }
+    },
+    {
+      "id": 106,
+      "album": "ETERNAL",
+      "title": "그대로 와 줘요",
+      "len": 209,
+      "platform": {
+        "melon": "33903436",
+        "genie": "94227267",
+        "bugs": "32330805",
+        "vibe": "50607173",
+        "flo": "447457765"
+      }
+    },
+    {
+      "id": 107,
+      "album": "ETERNAL",
+      "title": "잘 자라 내 사람아",
+      "len": 244,
+      "platform": {
+        "melon": "33903437",
+        "genie": "94227268",
+        "bugs": "32330806",
+        "vibe": "50607176",
+        "flo": "447457766"
+      }
+    },
+    {
+      "id": 108,
+      "album": "DOWOON",
+      "title": "문득 (Duet with 송희진)",
+      "len": 198,
+      "platform": {
+        "melon": "34009868",
+        "genie": "94435313",
+        "bugs": "32344405",
+        "vibe": "50772549",
+        "flo": "447737881"
+      }
+    },
+    {
+      "id": 109,
+      "album": "Pilmography",
+      "title": "안녕, 잘 가",
+      "len": 228,
+      "platform": {
+        "melon": "34603517",
+        "genie": "95955538",
+        "bugs": "32460057",
+        "vibe": "53589965",
+        "flo": "451201518"
+      }
+    },
+    {
+      "id": 110,
+      "album": "Pilmography",
+      "title": "지우게",
+      "len": 194,
+      "platform": {
+        "melon": "34603518",
+        "genie": "95955539",
+        "bugs": "32460058",
+        "vibe": "53589966",
+        "flo": "451201519"
+      }
+    },
+    {
+      "id": 111,
+      "album": "Pilmography",
+      "title": "소설 속의 작가가 되어",
+      "len": 208,
+      "platform": {
+        "melon": "34603519",
+        "genie": "95955540",
+        "bugs": "32460059",
+        "vibe": "53589967",
+        "flo": "451201520"
+      }
+    },
+    {
+      "id": 112,
+      "album": "Pilmography",
+      "title": "우리 더 걸을까",
+      "len": 182,
+      "platform": {
+        "melon": "34603520",
+        "genie": "95955541",
+        "bugs": "32460060",
+        "vibe": "53589971",
+        "flo": "451201521"
+      }
+    },
+    {
+      "id": 113,
+      "album": "Pilmography",
+      "title": "외딴섬의 외톨이",
+      "len": 246,
+      "platform": {
+        "melon": "34603521",
+        "genie": "95955542",
+        "bugs": "32460061",
+        "vibe": "53589969",
+        "flo": "451201522"
+      }
+    },
+    {
+      "id": 114,
+      "album": "Pilmography",
+      "title": "언젠가 봄은 찾아올 거야",
+      "len": 274,
+      "platform": {
+        "melon": "34603522",
+        "genie": "95955543",
+        "bugs": "32460062",
+        "vibe": "53589968",
+        "flo": "451201523"
+      }
+    },
+    {
+      "id": 115,
+      "album": "Pilmography",
+      "title": "휴지조각",
+      "len": 195,
+      "platform": {
+        "melon": "34603523",
+        "genie": "95955544",
+        "bugs": "32460063",
+        "vibe": "53589974",
+        "flo": "451201524"
+      }
+    },
+    {
+      "id": 116,
+      "album": "Pilmography",
+      "title": "늦은 끝",
+      "len": 232,
+      "platform": {
+        "melon": "34603524",
+        "genie": "95955545",
+        "bugs": "32460064",
+        "vibe": "53589972",
+        "flo": "451201525"
+      }
+    },
+    {
+      "id": 117,
+      "album": "Pilmography",
+      "title": "그리다 보면",
+      "len": 229,
+      "platform": {
+        "melon": "34603525",
+        "genie": "95955546",
+        "bugs": "32460065",
+        "vibe": "53589970",
+        "flo": "451201526"
+      }
+    },
+    {
+      "id": 118,
+      "album": "Pilmography",
+      "title": "행운을 빌어 줘",
+      "len": 209,
+      "platform": {
+        "melon": "34603526",
+        "genie": "95955547",
+        "bugs": "32460066",
+        "vibe": "53589973",
+        "flo": "451201527"
+      }
+    },
+    {
+      "id": 119,
+      "album": "Letters with notes",
+      "title": "오늘만은 너만을 이날을",
+      "len": 202,
+      "platform": {
+        "melon": "36759974",
+        "genie": "103325887",
+        "bugs": "6214702",
+        "vibe": "66832788",
+        "flo": "481989615"
+      }
+    },
+    {
+      "id": 120,
+      "album": "Letters with notes",
+      "title": "이것밖에는 없다",
+      "len": 201,
+      "platform": {
+        "melon": "36759975",
+        "genie": "103325888",
+        "bugs": "6214703",
+        "vibe": "66832787",
+        "flo": "481989616"
+      }
+    },
+    {
+      "id": 121,
+      "album": "Letters with notes",
+      "title": "let it be summer",
+      "len": 204,
+      "platform": {
+        "melon": "36730254",
+        "genie": "103181327",
+        "bugs": "32945820",
+        "vibe": "66751464",
+        "flo": "481989617"
+      }
+    },
+    {
+      "id": 122,
+      "album": "Letters with notes",
+      "title": "꿈꾼 (Dreamer)",
+      "len": 191,
+      "platform": {
+        "melon": "36759976",
+        "genie": "103325889",
+        "bugs": "6214704",
+        "vibe": "66832789",
+        "flo": "481989618"
+      }
+    },
+    {
+      "id": 123,
+      "album": "Letters with notes",
+      "title": "Bungee Jumping",
+      "len": 202,
+      "platform": {
+        "melon": "36759977",
+        "genie": "103325890",
+        "bugs": "6214705",
+        "vibe": "66832790",
+        "flo": "481989619"
+      }
+    },
+    {
+      "id": 124,
+      "album": "Letters with notes",
+      "title": "natural",
+      "len": 160,
+      "platform": {
+        "melon": "36759978",
+        "genie": "103325891",
+        "bugs": "6214706",
+        "vibe": "66832791",
+        "flo": "481989620"
+      }
+    },
+    {
+      "id": 125,
+      "album": "Letters with notes",
+      "title": "STRANGE",
+      "len": 149,
+      "platform": {
+        "melon": "36759979",
+        "genie": "103325892",
+        "bugs": "6214707",
+        "vibe": "66832794",
+        "flo": "481989621"
+      }
+    },
+    {
+      "id": 126,
+      "album": "Letters with notes",
+      "title": "SOUL (Feat. 최엘비)",
+      "len": 216,
+      "platform": {
+        "melon": "36759980",
+        "genie": "103325893",
+        "bugs": "6214708",
+        "vibe": "66832797",
+        "flo": "481989622"
+      }
+    },
+    {
+      "id": 127,
+      "album": "Letters with notes",
+      "title": "playground",
+      "len": 148,
+      "platform": {
+        "melon": "36759981",
+        "genie": "103325894",
+        "bugs": "6214709",
+        "vibe": "66832799",
+        "flo": "481989623"
+      }
+    },
+    {
+      "id": 128,
+      "album": "Letters with notes",
+      "title": "babo",
+      "len": 185,
+      "platform": {
+        "melon": "36759982",
+        "genie": "103325895",
+        "bugs": "6214710",
+        "vibe": "66832801",
+        "flo": "481989624"
+      }
+    },
+    {
+      "id": 129,
+      "album": "Letters with notes",
+      "title": "what is..",
+      "len": 175,
+      "platform": {
+        "melon": "36759983",
+        "genie": "103325896",
+        "bugs": "6214711",
+        "vibe": "66832804",
+        "flo": "481989625"
+      }
+    },
+    {
+      "id": 130,
+      "album": "Fourever",
+      "title": "Welcome to the Show",
+      "len": 220,
+      "platform": {
+        "melon": "37323943",
+        "genie": "105757621",
+        "bugs": "33122824",
+        "vibe": "83681269",
+        "flo": "497881290"
+      }
+    },
+    {
+      "id": 131,
+      "album": "Fourever",
+      "title": "HAPPY",
+      "len": 189,
+      "platform": {
+        "melon": "37323944",
+        "genie": "105757622",
+        "bugs": "33122825",
+        "vibe": "83681270",
+        "flo": "497881291"
+      }
+    },
+    {
+      "id": 132,
+      "album": "Fourever",
+      "title": "The Power of Love",
+      "len": 202,
+      "platform": {
+        "melon": "37323945",
+        "genie": "105757623",
+        "bugs": "33122826",
+        "vibe": "83681271",
+        "flo": "497881292"
+      }
+    },
+    {
+      "id": 133,
+      "album": "Fourever",
+      "title": "널 제외한 나의 뇌",
+      "len": 166,
+      "platform": {
+        "melon": "37323946",
+        "genie": "105757624",
+        "bugs": "33122827",
+        "vibe": "83681272",
+        "flo": "497881293"
+      }
+    },
+    {
+      "id": 134,
+      "album": "Fourever",
+      "title": "나만 슬픈 엔딩",
+      "len": 204,
+      "platform": {
+        "melon": "37323947",
+        "genie": "105757625",
+        "bugs": "33122828",
+        "vibe": "83681273",
+        "flo": "497881294"
+      }
+    },
+    {
+      "id": 135,
+      "album": "Fourever",
+      "title": "사랑하게 해주라",
+      "len": 243,
+      "platform": {
+        "melon": "37323948",
+        "genie": "105757626",
+        "bugs": "33122829",
+        "vibe": "83681274",
+        "flo": "497881295"
+      }
+    },
+    {
+      "id": 136,
+      "album": "Fourever",
+      "title": "그게 너의 사랑인지 몰랐어",
+      "len": 239,
+      "platform": {
+        "melon": "37323949",
+        "genie": "105757627",
+        "bugs": "33122830",
+        "vibe": "83681275",
+        "flo": "497881296"
+      }
+    },
+    {
+      "id": 137,
+      "album": "Band Aid",
+      "title": "괴물",
+      "len": 216,
+      "platform": {
+        "melon": "37946920",
+        "genie": "107632310",
+        "bugs": "33284303",
+        "vibe": "86961439",
+        "flo": "512780060"
+      }
+    },
+    {
+      "id": 138,
+      "album": "Band Aid",
+      "title": "녹아내려요",
+      "len": 165,
+      "platform": {
+        "melon": "37946921",
+        "genie": "107632311",
+        "bugs": "33284304",
+        "vibe": "86961440",
+        "flo": "512780061"
+      }
+    },
+    {
+      "id": 139,
+      "album": "Band Aid",
+      "title": "그녀가 웃었다",
+      "len": 202,
+      "platform": {
+        "melon": "37946922",
+        "genie": "107632312",
+        "bugs": "33284305",
+        "vibe": "86961441",
+        "flo": "512780062"
+      }
+    },
+    {
+      "id": 140,
+      "album": "Band Aid",
+      "title": "망겜",
+      "len": 189,
+      "platform": {
+        "melon": "37946923",
+        "genie": "107632313",
+        "bugs": "33284306",
+        "vibe": "86961442",
+        "flo": "512780063"
+      }
+    },
+    {
+      "id": 141,
+      "album": "Band Aid",
+      "title": "도와줘요 Rock&Roll",
+      "len": 156,
+      "platform": {
+        "melon": "37946924",
+        "genie": "107632314",
+        "bugs": "33284307",
+        "vibe": "86961443",
+        "flo": "512780064"
+      }
+    },
+    {
+      "id": 142,
+      "album": "Band Aid",
+      "title": "COUNTER",
+      "len": 178,
+      "platform": {
+        "melon": "37946925",
+        "genie": "107632315",
+        "bugs": "33284308",
+        "vibe": "86961444",
+        "flo": "512780065"
+      }
+    },
+    {
+      "id": 143,
+      "album": "Band Aid",
+      "title": "I'm Fine",
+      "len": 195,
+      "platform": {
+        "melon": "37946926",
+        "genie": "107632316",
+        "bugs": "33284309",
+        "vibe": "86961445",
+        "flo": "512780066"
+      }
+    },
+    {
+      "id": 144,
+      "album": "Band Aid",
+      "title": "아직 거기 살아",
+      "len": 199,
+      "platform": {
+        "melon": "37946927",
+        "genie": "107632317",
+        "bugs": "33284310",
+        "vibe": "86961446",
+        "flo": "512780067"
+      }
+    },
+    {
+      "id": 145,
+      "album": "30",
+      "title": "동화 속 아이처럼",
+      "len": 180,
+      "platform": {
+        "melon": "38176241",
+        "genie": "108235131",
+        "bugs": "33343718",
+        "vibe": "87690431",
+        "flo": "518475934"
+      }
+    },
+    {
+      "id": 146,
+      "album": "30",
+      "title": "Check Pattern",
+      "len": 197,
+      "platform": {
+        "melon": "38176242",
+        "genie": "108235132",
+        "bugs": "33343719",
+        "vibe": "87690432",
+        "flo": "518475936"
+      }
+    },
+    {
+      "id": 147,
+      "album": "30",
+      "title": "아무것도 안 하고 싶다",
+      "len": 245,
+      "platform": {
+        "melon": "38176243",
+        "genie": "108235133",
+        "bugs": "33343720",
+        "vibe": "87690433",
+        "flo": "518475937"
+      }
+    },
+    {
+      "id": 148,
+      "album": "30",
+      "title": "어디에도 없는 널",
+      "len": 226,
+      "platform": {
+        "melon": "38176244",
+        "genie": "108235134",
+        "bugs": "33343721",
+        "vibe": "87690434",
+        "flo": "518475938"
+      }
+    },
+    {
+      "id": 149,
+      "album": "30",
+      "title": "나무는 결국 겨울을 견뎌낼 거야",
+      "len": 203,
+      "platform": {
+        "melon": "38176245",
+        "genie": "108235135",
+        "bugs": "33343722",
+        "vibe": "87690435",
+        "flo": "518475940"
+      }
+    },
+    {
+      "id": 150,
+      "album": "30",
+      "title": "Wednesday Night",
+      "len": 159,
+      "platform": {
+        "melon": "38176246",
+        "genie": "108235136",
+        "bugs": "33343723",
+        "vibe": "87690436",
+        "flo": "518475941"
+      }
+    },
+    {
+      "id": 151,
+      "album": "30",
+      "title": "EASY",
+      "len": 159,
+      "platform": {
+        "melon": "38176247",
+        "genie": "108235137",
+        "bugs": "33343724",
+        "vibe": "87690437",
+        "flo": "518475943"
+      }
+    },
+    {
+      "id": 152,
+      "album": "30",
+      "title": "You Make Me Up",
+      "len": 208,
+      "platform": {
+        "melon": "38176248",
+        "genie": "108235138",
+        "bugs": "33343725",
+        "vibe": "87690438",
+        "flo": "518475944"
+      }
+    },
+    {
+      "id": 153,
+      "album": "30",
+      "title": "I don't wanna lose",
+      "len": 208,
+      "platform": {
+        "melon": "38176249",
+        "genie": "108235139",
+        "bugs": "33343726",
+        "vibe": "87690439",
+        "flo": "518475946"
+      }
+    },
+    {
+      "id": 154,
+      "album": "30",
+      "title": "Memories",
+      "len": 201,
+      "platform": {
+        "melon": "38176250",
+        "genie": "108235140",
+        "bugs": "33343727",
+        "vibe": "87690440",
+        "flo": "518475947"
+      }
+    },
+    {
+      "id": 155,
+      "album": "디어엠",
+      "title": "메이플라떼",
+      "len": 233,
+      "platform": {
+        "melon": "38793316",
+        "genie": "109804496",
+        "bugs": "6299698",
+        "vibe": "92329089",
+        "flo": "536364252"
+      }
+    },
+    {
+      "id": 156,
+      "album": "Maybe Tomorrow",
+      "title": "Maybe Tomorrow",
+      "len": 225,
+      "platform": {
+        "melon": "38892497",
+        "genie": "110009288",
+        "bugs": "33526777",
+        "vibe": "93668872",
+        "flo": "538889145"
+      }
+    },
+    {
+      "id": 157,
+      "album": "Maybe Tomorrow",
+      "title": "끝났지",
+      "len": 170,
+      "platform": {
+        "melon": "38892498",
+        "genie": "110009289",
+        "bugs": "33526778",
+        "vibe": "93668873",
+        "flo": "538889146"
+      }
+    },
+    {
+      "id": 158,
+      "album": "The DECADE",
+      "title": "꿈의 버스",
+      "len": 161,
+      "platform": {
+        "melon": "600031549",
+        "genie": "111654513",
+        "bugs": "33665079",
+        "vibe": "96696880",
+        "flo": "553984267"
+      }
+    },
+    {
+      "id": 159,
+      "album": "The DECADE",
+      "title": "INSIDE OUT",
+      "len": 180,
+      "platform": {
+        "melon": "600031550",
+        "genie": "111654514",
+        "bugs": "33665080",
+        "vibe": "96696881",
+        "flo": "553984268"
+      }
+    },
+    {
+      "id": 160,
+      "album": "The DECADE",
+      "title": "해야 뜨지 말아 줘",
+      "len": 193,
+      "platform": {
+        "melon": "600031551",
+        "genie": "111654515",
+        "bugs": "33665081",
+        "vibe": "96696882",
+        "flo": "553984269"
+      }
+    },
+    {
+      "id": 161,
+      "album": "The DECADE",
+      "title": "Disco Day",
+      "len": 186,
+      "platform": {
+        "melon": "600031552",
+        "genie": "111654516",
+        "bugs": "33665082",
+        "vibe": "96696883",
+        "flo": "553984270"
+      }
+    },
+    {
+      "id": 162,
+      "album": "The DECADE",
+      "title": "My Way",
+      "len": 192,
+      "platform": {
+        "melon": "600031553",
+        "genie": "111654517",
+        "bugs": "33665083",
+        "vibe": "96696884",
+        "flo": "553984271"
+      }
+    },
+    {
+      "id": 163,
+      "album": "The DECADE",
+      "title": "별들 앞에서",
+      "len": 223,
+      "platform": {
+        "melon": "600031554",
+        "genie": "111654518",
+        "bugs": "33665084",
+        "vibe": "96696885",
+        "flo": "553984272"
+      }
+    },
+    {
+      "id": 164,
+      "album": "The DECADE",
+      "title": "Take All My Heart",
+      "len": 203,
+      "platform": {
+        "melon": "600031555",
+        "genie": "111654519",
+        "bugs": "33665085",
+        "vibe": "96696886",
+        "flo": "553984273"
+      }
+    },
+    {
+      "id": 165,
+      "album": "The DECADE",
+      "title": "날아라! 드림라이더",
+      "len": 184,
+      "platform": {
+        "melon": "600031556",
+        "genie": "111654520",
+        "bugs": "33665086",
+        "vibe": "96696887",
+        "flo": "553984274"
+      }
+    },
+    {
+      "id": 166,
+      "album": "The DECADE",
+      "title": "드디어 끝나갑니다",
+      "len": 182,
+      "platform": {
+        "melon": "600031557",
+        "genie": "111654521",
+        "bugs": "33665087",
+        "vibe": "96696888",
+        "flo": "553984275"
+      }
+    },
+    {
+      "id": 167,
+      "album": "The DECADE",
+      "title": "우리의 계절",
+      "len": 236,
+      "platform": {
+        "melon": "600031558",
+        "genie": "111654522",
+        "bugs": "33665088",
+        "vibe": "96696889",
+        "flo": "553984276"
+      }
+    },
+    {
+      "id": 168,
+      "album": "Lovin′ the Christmas",
+      "title": "Lovin′ the Christmas",
+      "len": 181,
+      "platform": {
+        "melon": "600684375",
+        "genie": "113045173",
+        "bugs": "33778972",
+        "vibe": "98952807",
+        "flo": "565855981"
+      }
+    }
+  ]
+}

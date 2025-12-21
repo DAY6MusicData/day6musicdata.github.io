@@ -1,4 +1,3 @@
-// main.js - 카드 배경 이미지(data-bg) 적용
 (function () {
   const cards = document.querySelectorAll(".card[data-bg]");
   cards.forEach((card) => {

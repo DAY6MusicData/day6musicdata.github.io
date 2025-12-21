@@ -1,0 +1,14 @@
+<header class="top">
+  <h1 class="brand">
+    <a class="brand__link" href="{{ '/' | relative_url }}">데이식스 플레이</a>
+  </h1>
+
+  <div class="tabs-wrap">
+    <nav class="tabs" aria-label="메뉴">
+      <a class="tab {% if include.active == 'home' %}is-active{% endif %}" href="{{ '/' | relative_url }}">메인</a>
+      <a class="tab {% if include.active == 'playlist' %}is-active{% endif %}" href="{{ '/playlist/' | relative_url }}">플리 만들기</a>
+      <a class="tab {% if include.active == 'cheer' %}is-active{% endif %}" href="{{ '/cheer/' | relative_url }}">응원법</a>
+      <a class="tab {% if include.active == 'about' %}is-active{% endif %}" href="{{ '/about/' | relative_url }}">안내</a>
+    </nav>
+  </div>
+</header>

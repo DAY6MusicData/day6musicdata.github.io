@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ko' }}">
+  {% include head.html %}
+  <body>
+    <div class="page">
+      {% include header.html active=page.active %}
+
+      <main>
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+    </div>
+
+    <script>
+      window.__BASEURL__ = "{{ site.baseurl }}";
+    </script>
+    <script src="{{ '/assets/main.js' | relative_url }}" defer></script>
+  </body>
+</html>
