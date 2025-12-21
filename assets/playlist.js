@@ -98,8 +98,12 @@
           <div class="pl-pickedRow__album">${escapeHtml(song.album)}</div>
         </div>
         <div class="pl-pickedRow__len">${fmtLen(song.len)}</div>
-        <div class="pl-pickedRow__handle" aria-hidden="true">≡</div>
-        <button class="pl-pickedRow__remove" type="button" aria-label="삭제">×</button>
+        <div class="pl-pickedRow__handle" aria-hidden="true">
+          <i class="fa-solid fa-grip-lines" aria-hidden="true"></i>
+        </div>
+        <button class="pl-pickedRow__remove" type="button" aria-label="삭제">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
       </div>
     `;
   }
@@ -112,23 +116,34 @@
   }
 
   // ✅ Sortable 초기화(쫀득 애니메이션)
+  const isTouchDevice = () => window.matchMedia?.("(pointer: coarse)")?.matches;
+
   function initSortable() {
     if (sortable) sortable.destroy();
 
-  sortable = new Sortable($pickedList, {
-    animation: 180,
-    easing: "cubic-bezier(0.2, 0.8, 0.2, 1)",
-    handle: ".pl-pickedRow__handle",
-    draggable: ".pl-pickedRow",
-    ghostClass: "is-ghost",
-    chosenClass: "is-chosen",
-    dragClass: "is-drag",
+    const touch = !!isTouchDevice();
 
-    forceFallback: true,
-    fallbackTolerance: 3,
-    fallbackOnBody: true,
-    onEnd: () => syncOrderFromDOM(),
-  });
+    sortable = new Sortable($pickedList, {
+      animation: 180,
+      easing: "cubic-bezier(0.2, 0.8, 0.2, 1)",
+      handle: ".pl-pickedRow__handle",
+      draggable: ".pl-pickedRow",
+      ghostClass: "is-ghost",
+      chosenClass: "is-chosen",
+      dragClass: "is-drag",
+
+      // ✅ PC에서는 native drag가 포인터 추종감이 더 좋음
+      // ✅ 모바일(iOS/Android)은 fallback이 더 안정적
+      forceFallback: touch,
+      fallbackTolerance: touch ? 3 : 0,
+      fallbackOnBody: touch,
+
+      onStart: () => document.body.classList.add("is-sorting"),
+      onEnd: () => {
+        document.body.classList.remove("is-sorting");
+        syncOrderFromDOM();
+      },
+    });
   }
 
   function addPicked(id) {

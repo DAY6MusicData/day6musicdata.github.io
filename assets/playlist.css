@@ -100,7 +100,8 @@
 
 /* Search result row */
 .pl-row{
-  grid-template-columns: 52px 1fr auto;
+  /* 오른쪽 시간 영역 숨 안 막히게(특히 iOS) */
+  grid-template-columns: 52px 1fr 64px;
   padding: 14px 16px;
   cursor: pointer;
 }
@@ -112,13 +113,15 @@
 
 /* Picked row */
 .pl-pickedRow{
-  grid-template-columns: 52px 1fr auto 36px 36px; /* len, handle, x */
+  /* len, handle, x */
+  grid-template-columns: 52px 1fr 64px 44px 44px;
   padding: 14px 2px;
   border-top: 1px solid rgba(0,0,0,.10);
 
-  /* 쫀득 움직임 */
+  /* Sortable가 transform을 계속 만지니까, 여기서 transform transition 걸면
+     포인터/터치가 "늦게 따라오는" 고질병이 생김. (이중 애니메이션)
+     -> opacity/box-shadow만 부드럽게! */
   transition:
-    transform 180ms cubic-bezier(0.2,0.8,0.2,1),
     opacity 180ms cubic-bezier(0.2,0.8,0.2,1),
     box-shadow 180ms cubic-bezier(0.2,0.8,0.2,1);
 }
@@ -128,7 +131,7 @@
 .pl-pickedRow__cover{
   width: 44px;
   height: 44px;
-  border-radius: 9px;
+  border-radius: 12px;
   object-fit: cover;
   background: rgba(0,0,0,.10);
   flex-shrink: 0;
@@ -140,7 +143,7 @@
   content: "";
   width: 44px;
   height: 44px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: rgba(0,0,0,.10);
 }
 .pl-row.no-cover .pl-row__cover,
@@ -168,12 +171,13 @@
 
 .pl-row__len,
 .pl-pickedRow__len{
-  font-size: 16px;
-  font-weight: 700;
-  opacity: .9;
+  /* 시간은 "참고 정보" 느낌으로 살짝 약하게 */
+  font-size: 14px;
+  font-weight: 600;
+  opacity: .55;
   text-align: right;
   padding-left: 0;
-  min-width: 54px;
+  min-width: 64px;
 }
 
 /* ---------- Picked header ---------- */
@@ -217,22 +221,20 @@
 /* ---------- Controls (picked) ---------- */
 .pl-pickedRow__handle,
 .pl-pickedRow__remove{
-  width: 32px;
-  height: 32px;
+  /* 박스 느낌 제거 + 터치 영역은 큼직하게 */
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
-
-  border-radius: 10px;
-  background: rgba(0,0,0,.04);
-  border: 1px solid rgba(0,0,0,.08);
-
+  border-radius: 12px;
+  background: transparent;
+  border: 0;
   padding: 0;
 }
 
 .pl-pickedRow__handle{
-  opacity: .75;
-  font-weight: 900;
-  font-size: 18px;
+  opacity: .55;
+  font-size: 20px;
 
   cursor: grab;
   user-select: none;
@@ -244,10 +246,8 @@
 .pl-pickedRow__handle:active{ cursor: grabbing; }
 
 .pl-pickedRow__remove{
-  border: 0;
-  background: rgba(0,0,0,.04);
-  font-size: 18px;
-  opacity: .65;
+  font-size: 22px;
+  opacity: .55;
   cursor: pointer;
 
   transition: opacity 140ms ease, transform 140ms ease;
@@ -258,7 +258,6 @@
 /* ---------- SortableJS state classes ---------- */
 .pl-pickedRow.is-chosen{
   opacity: .92;
-  transform: scale(0.995);
 }
 
 .pl-pickedRow.is-ghost{
@@ -270,6 +269,22 @@
   box-shadow: 0 18px 32px rgba(0,0,0,.14);
 }
 
+/* ===== Sorting 중 transform transition/scale 싹 차단(포인터 지연 방지) ===== */
+body.is-sorting .pl-pickedRow{
+  transition: none !important;
+}
+body.is-sorting .pl-pickedRow.is-chosen,
+body.is-sorting .pl-pickedRow.is-drag{
+  transform: none !important;
+}
+
+/* 아이콘 클릭감: i 태그는 클릭을 가로채지 않게 */
+.pl-pickedRow__handle i,
+.pl-pickedRow__remove i,
+.pl-search__icon i{
+  pointer-events: none;
+}
+
 /* ---------- Mobile ---------- */
 @media (max-width: 480px){
   .pl-search__input{ font-size: 20px; }
@@ -279,7 +294,7 @@
 
   .pl-pickedRow__handle,
   .pl-pickedRow__remove{
-    width: 34px;
-    height: 34px;
+    width: 44px;
+    height: 44px;
   }
 }
