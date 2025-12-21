@@ -17,6 +17,7 @@
 *{ box-sizing: border-box; }
 html,body{ height: 100%; }
 body{
+  overflow-x: hidden;
   margin: 0;
   font-family: Pretendard, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   color: var(--text);
@@ -66,25 +67,26 @@ a{ color: inherit; }
 .brand__link{
   text-decoration: none;
 }
+.tabs-wrap{
+  margin-left: -18px;
+  margin-right: -18px;
+  padding: 6px 18px 14px;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
 
+  scrollbar-width: none;       /* Firefox 스크롤바 숨김 */
+}
+.tabs-wrap::-webkit-scrollbar{ display:none; }
 .tabs{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding-left: 18px;
-  padding-right: 18px;
   display: flex;
   gap: 10px;
   padding: 0;
   background: transparent;
-  border-radius: 0;
-  overflow-x: auto;
-  overflow-y: hidden;
-  max-width: 100%;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
 }
-.tabs::-webkit-scrollbar{
-  display: none;                  /* iOS/Safari/Chrome */
+.tabs::after{
+  content:"";
+  flex: 0 0 16px;
 }
 .tab{
   display: inline-flex;
