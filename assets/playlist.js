@@ -3,7 +3,7 @@
   if (!root) return;
 
   const songsUrl = root.dataset.songsUrl;
-  const coverBase = root.dataset.coverBase;
+  const coverBase = root.dataset.coverBase || ""; // 예: /assets/covers/
 
   const $field = root.querySelector(".pl-search__field");
   const $q = document.getElementById("plQ");
@@ -14,28 +14,42 @@
   const $pickedCount = document.getElementById("plPickedCount");
   const $pickedList = document.getElementById("plPickedList");
   const $confirm = document.getElementById("plConfirm");
+  const $searchIcon = root.querySelector(".pl-search__icon");
 
   let songs = [];
   let sortable = null;
 
-  // ✅ 순서 보존용
+  // 순서 보존용
   const pickedSet = new Set();
   let pickedOrder = [];
+
+  // FontAwesome 아이콘 세팅(검색)
+  if ($searchIcon) {
+    $searchIcon.innerHTML = `<i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>`;
+  }
+
+  // 확정 버튼 문구 바꾸기(HTML에서 안 바꿨으면 여기서라도)
+  if ($confirm) {
+    $confirm.textContent = "✔️ 플레이리스트 생성";
+  }
 
   const norm = (s) =>
     (s || "")
       .toLowerCase()
       .replace(/\s+/g, "")
-      .replace(/[·•\[\]().,!?'":\-_/]/g, "");
+      .replace(/[·•\[\]().!?'":\-_/]/g, "");
 
   const fmtLen = (sec) => {
-    const m = Math.floor(sec / 60);
-    const s = sec % 60;
+    const m = Math.floor((sec || 0) / 60);
+    const s = (sec || 0) % 60;
     return `${m}:${String(s).padStart(2, "0")}`;
   };
 
-  const coverUrlOf = (song) =>
-    `${coverBase}${encodeURIComponent(song.albumKey || "")}.jpg`;
+  const coverUrlOf = (song) => {
+    // albumKey 기준 jpg
+    const key = (song.albumKey || "").trim();
+    return `${coverBase}${encodeURIComponent(key)}.jpg`;
+  };
 
   const escapeHtml = (str) =>
     (str || "").replace(/[&<>"']/g, (m) => ({
@@ -52,6 +66,7 @@
   async function loadSongs() {
     const res = await fetch(songsUrl, { cache: "no-store" });
     const data = await res.json();
+
     songs = (data.songs || []).slice().sort((a, b) => a.id - b.id);
 
     songs.forEach(s => {
@@ -66,7 +81,11 @@
     return songs.filter(s => s.__t.includes(key) || s.__a.includes(key));
   }
 
-  // ✅ 검색 결과 렌더(햄버거 없음)
+  function updatePickedCount() {
+    $pickedCount.textContent = `(총 ${pickedOrder.length}곡)`;
+  }
+
+  // 검색 결과 렌더(핸들/삭제 없음)
   function renderResults(list) {
     const view = list.slice(0, 120);
     $empty.hidden = view.length !== 0;
@@ -84,10 +103,6 @@
     `).join("");
   }
 
-  function updatePickedCount() {
-    $pickedCount.textContent = `(총 ${pickedOrder.length}곡)`;
-  }
-
   function makePickedRow(song) {
     return `
       <div class="pl-pickedRow" data-id="${song.id}">
@@ -98,9 +113,11 @@
           <div class="pl-pickedRow__album">${escapeHtml(song.album)}</div>
         </div>
         <div class="pl-pickedRow__len">${fmtLen(song.len)}</div>
-        <div class="pl-pickedRow__handle" aria-hidden="true">
+
+        <button class="pl-pickedRow__handle" type="button" aria-label="순서 변경">
           <i class="fa-solid fa-grip-lines" aria-hidden="true"></i>
-        </div>
+        </button>
+
         <button class="pl-pickedRow__remove" type="button" aria-label="삭제">
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
@@ -108,20 +125,21 @@
     `;
   }
 
-  // ✅ 드래그 후 실제 순서 동기화(DOM 기준)
+  // 드래그 후 실제 순서 동기화(DOM 기준)
   function syncOrderFromDOM() {
     pickedOrder = [...$pickedList.querySelectorAll(".pl-pickedRow")]
       .map(el => Number(el.dataset.id));
     updatePickedCount();
   }
 
-  // ✅ Sortable 초기화(쫀득 애니메이션)
-  const isTouchDevice = () => window.matchMedia?.("(pointer: coarse)")?.matches;
-
+  // Sortable 초기화
   function initSortable() {
     if (sortable) sortable.destroy();
 
-    const touch = !!isTouchDevice();
+    // iOS/터치 환경은 fallback 강제(사파리 HTML5 DnD가 개같음 ㅠ)
+    const isTouch = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+    const isiOS = /iP(ad|hone|od)/.test(navigator.platform)
+      || (navigator.userAgent.includes("Mac") && isTouch);
 
     sortable = new Sortable($pickedList, {
       animation: 180,
@@ -132,17 +150,15 @@
       chosenClass: "is-chosen",
       dragClass: "is-drag",
 
-      // ✅ PC에서는 native drag가 포인터 추종감이 더 좋음
-      // ✅ 모바일(iOS/Android)은 fallback이 더 안정적
-      forceFallback: touch,
-      fallbackTolerance: touch ? 3 : 0,
-      fallbackOnBody: touch,
+      // ✅ 핵심: 드래그 중 “손/커서 따라오기”는 CSS에서 transition 끈 게 메인 해결책.
+      // + iOS에서만 fallback 강제
+      forceFallback: isiOS,
+      fallbackOnBody: true,
+      fallbackTolerance: 0,
 
-      onStart: () => document.body.classList.add("is-sorting"),
-      onEnd: () => {
-        document.body.classList.remove("is-sorting");
-        syncOrderFromDOM();
-      },
+      // 드래그 시작/끝에 클래스 확실히(혹시 꼬이면 정리)
+      onStart: () => {},
+      onEnd: () => syncOrderFromDOM(),
     });
   }
 
@@ -200,6 +216,7 @@
       const rm = e.target.closest(".pl-pickedRow__remove");
       if (!rm) return;
       const row = e.target.closest(".pl-pickedRow");
+      if (!row) return;
       removePicked(Number(row.dataset.id));
     });
 
@@ -213,7 +230,7 @@
     });
 
     $confirm.addEventListener("click", () => {
-      // TODO: 여기서 비트셋 토큰 만들고 share로 넘기면 됨
+      // TODO: 여기서 pickedOrder로 토큰 생성/공유 링크 만들기
       alert(`담은 곡: ${pickedOrder.length}곡`);
       console.log("pickedOrder:", pickedOrder);
     });
