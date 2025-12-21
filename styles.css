@@ -68,17 +68,15 @@ a{ color: inherit; }
 }
 
 .tabs{
-  display: inline-flex;
+  display: flex;
   gap: 10px;
-  padding: 10px 12px;
-  border-radius: 999px;
-  overflow: auto;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
   max-width: 100%;
   -webkit-overflow-scrolling: touch;
-
-  background: transparent;
-  border: 0;
-  box-shadow: none;
 }
 .tab{
   display: inline-flex;
@@ -147,15 +145,14 @@ a{ color: inherit; }
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* badge: 14pt Pretendard SemiBold */
 .badge{
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   font-size: 14pt;
   font-weight: 600;
-  color: rgba(255,255,255,.90);
 }
 
 /* headline: 26pt Pretendard Bold */
@@ -170,7 +167,7 @@ a{ color: inherit; }
 
 /* CTA: Regular 17pt, bg white 75% */
 .card__actions{
-  margin-top: 16px;
+  margin-top: auto;
   display: flex;
   justify-content: flex-end;
 }
