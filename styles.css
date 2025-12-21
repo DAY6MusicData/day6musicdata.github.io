@@ -109,7 +109,7 @@ a{ color: inherit; }
 .tab.is-active{
   background: var(--menu-on);      /* 선택: 흰색 */
   font-weight: 600;               /* Pretendard SemiBold */
-  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
 
 .tab:focus{
