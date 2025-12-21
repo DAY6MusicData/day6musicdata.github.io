@@ -1,57 +1,66 @@
-/* Playlist page */
+/* =========================
+   DAY6 PLAY - Playlist (Final)
+   ========================= */
+
 .pl{
   margin-top: 18px;
   letter-spacing: -0.02em;
 }
 
-/* 검색바 */
+/* ---------- Search ---------- */
 .pl-search{ position: relative; }
 
 .pl-search__field{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 18px;
+  border-radius: 999px;
+
   background: rgba(255,255,255,.70);
   border: 1px solid rgba(0,0,0,.12);
-  border-radius: 999px;
-  padding: 14px 18px;
   box-shadow: 0 12px 22px rgba(0,0,0,.10);
 }
 
 .pl-search__input{
-  width:100%;
-  border:0;
-  outline:0;
-  background:transparent;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+
+  font-family: "Pretendard", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
 
-.pl-search__hint{
-  color: rgba(0,0,0,.38);
+.pl-search__icon{
   margin-left: 12px;
-  white-space: nowrap;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  opacity: .55;
+  user-select: none;
 }
 
-/* 드롭다운 */
+/* ---------- Dropdown ---------- */
 .pl-dd{
   margin-top: 14px;
   border-radius: 22px;
+  overflow: hidden;
+
   background: rgba(255,255,255,.72);
   border: 1px solid rgba(0,0,0,.10);
-  overflow: hidden;
   box-shadow: 0 18px 36px rgba(0,0,0,.12);
 }
 
 .pl-dd__list{
   max-height: 420px;
   overflow: auto;
-  scrollbar-width: none;
+
+  scrollbar-width: none;              /* Firefox */
+  -ms-overflow-style: none;           /* old Edge */
 }
-.pl-dd__list::-webkit-scrollbar{ display:none; }
+.pl-dd__list::-webkit-scrollbar{ display: none; } /* Chrome/Safari */
 
 .pl-dd__empty{
   padding: 16px;
@@ -59,25 +68,48 @@
   font-weight: 600;
 }
 
-/* 결과 row */
-.pl-row{
-  width:100%;
-  display:grid;
-  grid-template-columns: 52px 1fr auto 20px;
+/* ---------- Rows (Shared) ---------- */
+.pl-row,
+.pl-pickedRow{
+  width: 100%;
+  display: grid;
   gap: 12px;
-  align-items:center;
-  padding: 14px 16px;
-  border:0;
+  align-items: center;
+
+  border: 0;
   background: transparent;
-  cursor:pointer;
-  text-align:left;
+  text-align: left;
 }
 
+/* Search result row */
+.pl-row{
+  grid-template-columns: 52px 1fr auto;
+  padding: 14px 16px;
+  cursor: pointer;
+}
 .pl-row + .pl-row{
   border-top: 1px solid rgba(0,0,0,.08);
 }
+.pl-row:active{
+  transform: translateY(1px);
+}
 
-.pl-row__cover{
+/* Picked row */
+.pl-pickedRow{
+  grid-template-columns: 52px 1fr auto 24px 34px; /* len, handle, x */
+  padding: 14px 2px;
+  border-top: 1px solid rgba(0,0,0,.10);
+
+  /* 쫀득 움직임 */
+  transition:
+    transform 180ms cubic-bezier(0.2,0.8,0.2,1),
+    opacity 180ms cubic-bezier(0.2,0.8,0.2,1),
+    box-shadow 180ms cubic-bezier(0.2,0.8,0.2,1);
+}
+
+/* Covers (Shared) */
+.pl-row__cover,
+.pl-pickedRow__cover{
   width: 44px;
   height: 44px;
   border-radius: 14px;
@@ -86,47 +118,50 @@
   flex-shrink: 0;
 }
 
-.pl-row.no-cover::before{
-  content:"";
-  width:44px; height:44px;
-  border-radius:14px;
+/* Fallback when image fails */
+.pl-row.no-cover::before,
+.pl-pickedRow.no-cover::before{
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
   background: rgba(0,0,0,.10);
 }
 
-.pl-row__title{
+/* Text (Shared-ish) */
+.pl-row__title,
+.pl-pickedRow__title{
   font-size: 18px;
   font-weight: 800;
   line-height: 1.15;
 }
 
-.pl-row__album{
+.pl-row__album,
+.pl-pickedRow__album{
   margin-top: 2px;
   font-size: 16px;
-  opacity: .65;
   font-weight: 600;
+  opacity: .65;
 }
 
-.pl-row__len{
+.pl-row__len,
+.pl-pickedRow__len{
   font-size: 16px;
-  opacity: .9;
   font-weight: 700;
+  opacity: .9;
   padding-left: 8px;
 }
 
-.pl-row__icon{
-  opacity: .55;
-  font-weight: 800;
-}
-
-/* 담은 곡 */
+/* ---------- Picked header ---------- */
 .pl-picked{
   margin-top: 18px;
 }
 
 .pl-picked__top{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   padding: 10px 2px;
   border-bottom: 1px solid rgba(0,0,0,.12);
 }
@@ -137,71 +172,60 @@
 }
 
 .pl-picked__btn{
-  border:0;
+  border: 0;
   border-radius: 14px;
   padding: 12px 16px;
+
   background: #2bb34a;
   color: #fff;
+
   font-size: 16px;
   font-weight: 800;
   letter-spacing: -0.02em;
+
+  transition: transform 140ms ease, filter 140ms ease;
+}
+.pl-picked__btn:active{
+  transform: translateY(1px);
+  filter: brightness(.98);
 }
 
-.pl-picked__list{ }
-
-.pl-pickedRow{
-  display:grid;
-  grid-template-columns: 52px 1fr auto 34px;
-  gap: 12px;
-  align-items:center;
-  padding: 14px 2px;
-  border-top: 1px solid rgba(0,0,0,.10);
+/* ---------- Controls (picked) ---------- */
+.pl-pickedRow__handle{
+  opacity: .55;
+  font-weight: 900;
+  cursor: grab;
+  user-select: none;
 }
-
-.pl-pickedRow__cover{
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  object-fit: cover;
-  background: rgba(0,0,0,.10);
-}
-
-.pl-pickedRow.no-cover::before{
-  content:"";
-  width:44px; height:44px;
-  border-radius:14px;
-  background: rgba(0,0,0,.10);
-}
-
-.pl-pickedRow__title{
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.15;
-}
-
-.pl-pickedRow__album{
-  margin-top: 2px;
-  font-size: 16px;
-  opacity: .65;
-  font-weight: 600;
-}
-
-.pl-pickedRow__len{
-  font-size: 16px;
-  opacity: .9;
-  font-weight: 700;
-  padding-left: 8px;
-}
+.pl-pickedRow__handle:active{ cursor: grabbing; }
 
 .pl-pickedRow__remove{
-  border:0;
+  border: 0;
   background: transparent;
   font-size: 24px;
   opacity: .55;
-  cursor:pointer;
+  cursor: pointer;
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+.pl-pickedRow__remove:hover{ opacity: .75; }
+.pl-pickedRow__remove:active{ transform: scale(0.96); }
+
+/* ---------- SortableJS state classes ---------- */
+.pl-pickedRow.is-chosen{
+  opacity: .92;
+  transform: scale(0.995);
 }
 
-/* 모바일 조정 */
+.pl-pickedRow.is-ghost{
+  opacity: .35;
+}
+
+.pl-pickedRow.is-drag{
+  opacity: 1;
+  box-shadow: 0 18px 32px rgba(0,0,0,.14);
+}
+
+/* ---------- Mobile ---------- */
 @media (max-width: 480px){
   .pl-search__input{ font-size: 20px; }
   .pl-row__title, .pl-pickedRow__title{ font-size: 17px; }
