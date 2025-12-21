@@ -128,7 +128,7 @@
 .pl-pickedRow__cover{
   width: 44px;
   height: 44px;
-  border-radius: 14px;
+  border-radius: 9px;
   object-fit: cover;
   background: rgba(0,0,0,.10);
   flex-shrink: 0;
