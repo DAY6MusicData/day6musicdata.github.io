@@ -22,5 +22,10 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 
-  <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
+  {% if page.css %}
+    {% for href in page.css %}
+      <link rel="stylesheet" href="{{ href | relative_url }}" />
+    {% endfor %}
+  {% endif %}
 </head>
