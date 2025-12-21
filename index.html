@@ -1,4 +1,64 @@
----
-layout: home
-background: '/img/bg-index.jpg'
----
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>데이식스 플레이</title>
+  <meta name="description" content="DAY6 플레이리스트 만들기와 공유 링크 기능을 제공하는 데이식스 플레이." />
+  <!-- Pretendard Webfont -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div id="site-header" data-active="home"></div>
+
+    <main class="grid" aria-label="콘텐츠">
+  <section class="card card--hero" data-bg="/assets/hero1.jpg">
+    <div class="card__overlay"></div>
+    <div class="card__content">
+      <p class="badge">새로 나왔어요</p>
+      <h2 class="headline">나만의 플레이리스트<br />만들고 공유하기</h2>
+      <div class="card__actions">
+        <a class="cta" href="/make/">
+          사용해보기 <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" data-bg="/assets/hero2.jpg">
+    <div class="card__overlay"></div>
+    <div class="card__content">
+      <p class="badge">준비중이에요</p>
+      <h2 class="headline">응원법 모아보기<br />기능을 준비하고 있어요</h2>
+      <div class="card__actions">
+        <a class="cta" href="/chants/">
+          더 알아보기 <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" data-bg="/assets/hero3.jpg">
+    <div class="card__overlay"></div>
+    <div class="card__content">
+      <p class="badge">버그 제보</p>
+      <h2 class="headline">사용 중 발생한 문제나<br />건의사항을 알려주세요</h2>
+      <div class="card__actions">
+        <a class="cta" href="mailto:my@day6.kr?subject=%EB%8D%B0%EC%9D%B4%EC%8B%9D%EC%8A%A4%20%ED%94%8C%EB%A0%88%EC%9D%B4%20%EB%B2%84%EA%B7%B8%2F%EA%B1%B4%EC%9D%98&body=%EC%96%B4%EB%96%A4%20%EB%AC%B8%EC%A0%9C%EA%B0%80%20%EB%B0%9C%EC%83%9D%ED%96%88%EB%8A%94%EC%A7%80%20%EA%B5%AC%EC%B2%B4%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EC%93%B0%EC%96%B4%EC%A4%84%EB%9E%98%3F%0A%0A-%20%EC%82%AC%EC%9A%A9%20%ED%99%98%EA%B2%BD%20(%EA%B8%B0%EA%B8%B0%2F%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80)%3A%0A-%20%EB%B0%9C%EC%83%9D%20%EB%8B%A8%EA%B3%84%3A%0A-%20%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7(%EA%B0%80%EB%8A%A5%ED%95%98%EB%A9%B4)%3A%0A%0A%EA%B3%A0%EB%A7%88%EC%9B%8C%EC%9A%94!">
+          메일 쓰기 <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <script src="/site.js" defer></script>
+  <script src="/main.js" defer></script>
+</body>
+</html>
