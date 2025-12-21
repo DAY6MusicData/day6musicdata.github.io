@@ -115,17 +115,20 @@
   function initSortable() {
     if (sortable) sortable.destroy();
 
-    sortable = new Sortable($pickedList, {
-      animation: 180,
-      easing: "cubic-bezier(0.2, 0.8, 0.2, 1)",
-      handle: ".pl-pickedRow__handle",
-      draggable: ".pl-pickedRow",
-      ghostClass: "is-ghost",
-      chosenClass: "is-chosen",
-      dragClass: "is-drag",
-      forceFallback: false,
-      onEnd: () => syncOrderFromDOM(),
-    });
+  sortable = new Sortable($pickedList, {
+    animation: 180,
+    easing: "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    handle: ".pl-pickedRow__handle",
+    draggable: ".pl-pickedRow",
+    ghostClass: "is-ghost",
+    chosenClass: "is-chosen",
+    dragClass: "is-drag",
+
+    forceFallback: true,
+    fallbackTolerance: 3,
+    fallbackOnBody: true,
+    onEnd: () => syncOrderFromDOM(),
+  });
   }
 
   function addPicked(id) {
