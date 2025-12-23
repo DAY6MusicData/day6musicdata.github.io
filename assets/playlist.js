@@ -30,7 +30,7 @@
 
   // 확정 버튼 문구 바꾸기(HTML에서 안 바꿨으면 여기서라도)
   if ($confirm) {
-    $confirm.textContent = '<i class="fa-solid fa-check" aria-hidden="true"></i> 플레이리스트 생성';
+    $confirm.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> 플레이리스트 생성';
   }
 
   const norm = (s) =>
