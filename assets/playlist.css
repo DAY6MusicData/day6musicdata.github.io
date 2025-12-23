@@ -28,15 +28,15 @@
   outline: 0;
   background: transparent;
 
-  font-size: 22px;
-  font-weight: 650;
+  font-size: 20px;
+  font-weight: 550;
   letter-spacing: -0.02em;
 
   -webkit-appearance: none;
   appearance: none;
 
   color: #111;
-  -webkit-text-fill-color: #111; /* iOS 파란 글씨 방지 */
+  -webkit-text-fill-color: #333; /* iOS 파란 글씨 방지 */
 }
 
 .pl-search__icon{
@@ -157,7 +157,7 @@
 .pl-row__title,
 .pl-pickedRow__title{
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.18;
   letter-spacing: -0.02em;
 
@@ -174,7 +174,7 @@
 .pl-pickedRow__album{
   margin-top: 2px;
   font-size: 15px;
-  font-weight: 650;
+  font-weight: 500;
   opacity: .62;
   letter-spacing: -0.02em;
 
@@ -187,7 +187,7 @@
 .pl-row__len,
 .pl-pickedRow__len{
   font-size: 14px;
-  font-weight: 650;
+  font-weight: 500;
   opacity: .55;
   text-align: center;
   min-width: 46px;
@@ -209,7 +209,7 @@
 
 .pl-picked__title{
   font-size: 22px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 /* ✅ 확정 버튼: 아웃라인 + hover shadow */
@@ -222,7 +222,7 @@
   padding: 10px 14px;
 
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: -0.02em;
 
   transition: box-shadow 160ms ease, transform 140ms ease, background 160ms ease;
@@ -293,7 +293,7 @@
 
 /* ---------- Mobile ---------- */
 @media (max-width: 480px){
-  .pl-search__input{ font-size: 20px; }
+  .pl-search__input{ font-size: 18px; }
   .pl-row__title, .pl-pickedRow__title{ font-size: 17px; }
   .pl-row__album, .pl-pickedRow__album{ font-size: 14px; }
   .pl-picked__title{ font-size: 20px; }
