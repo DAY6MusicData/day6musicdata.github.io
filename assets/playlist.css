@@ -207,6 +207,28 @@
   font-weight: 700;
 }
 
+.pl-picked__title{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.pl-picked__chip{
+  display:inline-flex;
+  align-items:center;
+  height: 34px;
+  padding: 0 12px;
+
+  border-radius: 999px;
+  background: rgba(0,0,0,.08);
+  color: rgba(0,0,0,.85);
+
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+
 .pl-picked__btn{
   border: 2px solid #2bb34a;
   background: #fff;
@@ -302,6 +324,11 @@
   .pl-row__title, .pl-pickedRow__title{ font-size: 17px; }
   .pl-row__album, .pl-pickedRow__album{ font-size: 14px; }
   .pl-picked__title{ font-size: 20px; }
+  .pl-picked__chip{
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+  }
 
   .pl-pickedRow{
     grid-template-columns: 52px minmax(0, 1fr) 40px 34px 34px;

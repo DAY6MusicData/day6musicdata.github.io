@@ -30,7 +30,7 @@
 
   // 확정 버튼 문구 바꾸기(HTML에서 안 바꿨으면 여기서라도)
   if ($confirm) {
-    $confirm.textContent = "✔️ 플레이리스트 생성";
+    $confirm.textContent = '<i class="fa-solid fa-check" aria-hidden="true"></i> 플레이리스트 생성';
   }
 
   const norm = (s) =>
@@ -81,9 +81,25 @@
     return songs.filter(s => s.__t.includes(key) || s.__a.includes(key));
   }
 
-  function updatePickedCount() {
-    $pickedCount.textContent = `(총 ${pickedOrder.length}곡)`;
+  function fmtTotalTime(totalSec){
+    const totalMin = Math.floor(totalSec / 60);
+    const h = Math.floor(totalMin / 60);
+    const m = totalMin % 60;
+  
+    if (h > 0) return `${h}시간 ${String(m).padStart(2,"0")}분`;
+    return `${String(m).padStart(2,"0")}분`;
   }
+  
+  function updatePickedCount(){
+    const totalSec = pickedOrder.reduce((acc, id) => {
+      const s = songs.find(x => x.id === id);
+      return acc + (s?.len || 0);
+    }, 0);
+  
+    const n = pickedOrder.length;
+    $pickedCount.textContent = `${n}곡(${fmtTotalTime(totalSec)})`;
+  }
+  
 
   // 검색 결과 렌더(핸들/삭제 없음)
   function renderResults(list) {
