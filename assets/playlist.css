@@ -88,7 +88,7 @@
 .pl-pickedRow{
   width: 100%;
   display: grid;
-  gap: 12px;
+  gap: 5px;
   align-items: center;
 
   border: 0;
@@ -129,7 +129,7 @@
 .pl-pickedRow__cover{
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 8px;
   object-fit: cover;
   background: rgba(0,0,0,.10);
   display: block;
@@ -189,7 +189,7 @@
   font-size: 14px;
   font-weight: 650;
   opacity: .55;
-  text-align: right;
+  text-align: center;
   min-width: 46px;
 }
 
