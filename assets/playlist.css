@@ -230,9 +230,9 @@
 
 
 .pl-picked__btn{
-  border: 2px solid #2bb34a;
-  background: #fff;
-  color: #1f7f34;
+  border: 0;
+  background: rgba(000,120,240,.75);
+  color: #fff;
 
   border-radius: 999px;
   padding: 10px 14px;
@@ -246,7 +246,7 @@
 @media (hover:hover){
   .pl-picked__btn:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,.14);
-    background: rgba(43,179,74,.06);
+    background: rgba(000,120,240,1);
   }
 }
 .pl-picked__btn:active{
@@ -340,7 +340,7 @@
     transform: translateX(-50%);
     z-index: 999;
 
-    width: min(92vw, 420px);
+    width: auto;
     justify-content: center;
 
     box-shadow: 0 18px 34px rgba(0,0,0,.16);
