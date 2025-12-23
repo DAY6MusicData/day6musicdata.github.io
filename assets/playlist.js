@@ -16,19 +16,31 @@
   const $confirm = document.getElementById("plConfirm");
   const $searchIcon = root.querySelector(".pl-search__icon");
 
+  if (!$q || !$dd || !$results || !$pickedList) return;
+
+  // 실제 스크롤되는 컨테이너
+  const $ddList = $dd.querySelector(".pl-dd__list") || $dd;
+
   let songs = [];
+  let songsById = new Map();
   let sortable = null;
 
-  // 순서 보존용
-  const pickedSet = new Set();
-  let pickedOrder = [];
+  // ✅ 중복 허용 + 순서 보존: (key, id)로 관리
+  let pickedSeq = 0;
+  /** @type {{key:string, id:number}[]} */
+  let pickedItems = [];
+
+  // ✅ 검색 결과 무한 로딩
+  const PAGE_SIZE = 60;
+  let activeList = [];
+  let rendered = 0;
 
   // FontAwesome 아이콘 세팅(검색)
   if ($searchIcon) {
     $searchIcon.innerHTML = `<i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>`;
   }
 
-  // 확정 버튼 문구 바꾸기(HTML에서 안 바꿨으면 여기서라도)
+  // 확정 버튼 문구(HTML에서 안 바꿨으면 여기서라도)
   if ($confirm) {
     $confirm.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> 플레이리스트 생성';
   }
@@ -43,6 +55,14 @@
     const m = Math.floor((sec || 0) / 60);
     const s = (sec || 0) % 60;
     return `${m}:${String(s).padStart(2, "0")}`;
+  };
+
+  const fmtTotalTime = (totalSec) => {
+    const totalMin = Math.floor((totalSec || 0) / 60);
+    const h = Math.floor(totalMin / 60);
+    const m = totalMin % 60;
+    if (h > 0) return `${h}시간 ${String(m).padStart(2, "0")}분`;
+    return `${String(totalMin).padStart(2, "0")}분`;
   };
 
   const coverUrlOf = (song) => {
@@ -63,6 +83,116 @@
   const open = () => { $dd.hidden = false; };
   const close = () => { $dd.hidden = true; };
 
+  // ---------------------------
+  // Toast (담기/삭제)
+  // ---------------------------
+  let $toast = null;
+  let toastTimer = null;
+
+  function ensureToast() {
+    if ($toast) return;
+    $toast = document.createElement("div");
+    $toast.className = "pl-toast";
+    document.body.appendChild($toast);
+  }
+
+  function toast(type, msg) {
+    ensureToast();
+    $toast.classList.remove("is-show", "is-green", "is-red");
+    if (type === "green") $toast.classList.add("is-green");
+    if (type === "red") $toast.classList.add("is-red");
+    $toast.textContent = msg;
+
+    // reflow for animation
+    void $toast.offsetWidth;
+    $toast.classList.add("is-show");
+
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      $toast.classList.remove("is-show");
+    }, 1200);
+  }
+
+  // ---------------------------
+  // Duplicate confirm modal
+  // ---------------------------
+  let $modal = null;
+
+  function ensureModal() {
+    if ($modal) return;
+
+    $modal = document.createElement("div");
+    $modal.className = "pl-modal";
+    $modal.innerHTML = `
+      <div class="pl-modal__backdrop"></div>
+      <div class="pl-modal__card" role="dialog" aria-modal="true">
+        <div class="pl-modal__song">
+          <img class="pl-modal__cover" alt="" />
+          <div class="pl-modal__meta">
+            <div class="pl-modal__title"></div>
+            <div class="pl-modal__album"></div>
+          </div>
+        </div>
+
+        <div class="pl-modal__msg">
+          이 곡은 이미 들어가있는 곡이에요.
+        </div>
+
+        <div class="pl-modal__actions">
+          <button type="button" class="pl-modal__btn pl-modal__btn--ghost" data-act="cancel">안 담기</button>
+          <button type="button" class="pl-modal__btn pl-modal__btn--ok" data-act="ok">그래도 담기</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild($modal);
+  }
+
+  function showDuplicateConfirm(song) {
+    ensureModal();
+
+    const $cover = $modal.querySelector(".pl-modal__cover");
+    const $title = $modal.querySelector(".pl-modal__title");
+    const $album = $modal.querySelector(".pl-modal__album");
+
+    $cover.src = coverUrlOf(song);
+    $cover.onerror = () => { $cover.style.display = "none"; };
+    $cover.style.display = "";
+
+    $title.textContent = song.title || "";
+    $album.textContent = song.album || "";
+
+    return new Promise((resolve) => {
+      const onClick = (e) => {
+        const btn = e.target.closest("[data-act]");
+        if (!btn) return;
+        const act = btn.getAttribute("data-act");
+        hide();
+        resolve(act === "ok");
+      };
+
+      const onKey = (e) => {
+        if (e.key === "Escape") {
+          hide();
+          resolve(false);
+        }
+      };
+
+      function hide() {
+        $modal.classList.remove("is-open");
+        document.removeEventListener("keydown", onKey);
+        $modal.removeEventListener("click", onClick);
+      }
+
+      $modal.addEventListener("click", onClick);
+      document.addEventListener("keydown", onKey);
+
+      $modal.classList.add("is-open");
+      // 초점은 “그래도 담기”로
+      const okBtn = $modal.querySelector('.pl-modal__btn--ok');
+      if (okBtn) setTimeout(() => okBtn.focus(), 0);
+    });
+  }
+
   async function loadSongs() {
     const res = await fetch(songsUrl, { cache: "no-store" });
     const data = await res.json();
@@ -73,6 +203,8 @@
       s.__t = norm(s.title);
       s.__a = norm(s.album);
     });
+
+    songsById = new Map(songs.map(s => [Number(s.id), s]));
   }
 
   function filterSongs(query) {
@@ -81,32 +213,21 @@
     return songs.filter(s => s.__t.includes(key) || s.__a.includes(key));
   }
 
-  function fmtTotalTime(totalSec){
-    const totalMin = Math.floor(totalSec / 60);
-    const h = Math.floor(totalMin / 60);
-    const m = totalMin % 60;
-  
-    if (h > 0) return `${h}시간 ${String(m).padStart(2,"0")}분`;
-    return `${String(m).padStart(2,"0")}분`;
-  }
-  
-  function updatePickedCount(){
-    const totalSec = pickedOrder.reduce((acc, id) => {
-      const s = songs.find(x => x.id === id);
+  function updatePickedCount() {
+    const totalSec = pickedItems.reduce((acc, it) => {
+      const s = songsById.get(it.id);
       return acc + (s?.len || 0);
     }, 0);
-  
-    const n = pickedOrder.length;
+
+    const n = pickedItems.length;
     $pickedCount.textContent = `${n}곡(${fmtTotalTime(totalSec)})`;
   }
-  
 
-  // 검색 결과 렌더(핸들/삭제 없음)
-  function renderResults(list) {
-    const view = list.slice(0, 120);
-    $empty.hidden = view.length !== 0;
-
-    $results.innerHTML = view.map(s => `
+  // ---------------------------
+  // Search rendering (infinite)
+  // ---------------------------
+  function rowHtml(s) {
+    return `
       <button class="pl-row" type="button" data-id="${s.id}">
         <img class="pl-row__cover" src="${coverUrlOf(s)}" alt="" loading="lazy"
              onerror="this.style.display='none'; this.parentElement.classList.add('no-cover');" />
@@ -116,12 +237,36 @@
         </div>
         <div class="pl-row__len">${fmtLen(s.len)}</div>
       </button>
-    `).join("");
+    `;
   }
 
-  function makePickedRow(song) {
+  function renderResults(list, reset = true) {
+    if (reset) {
+      activeList = list || [];
+      rendered = 0;
+      $results.innerHTML = "";
+      if ($ddList) $ddList.scrollTop = 0;
+    }
+
+    // empty state
+    $empty.hidden = activeList.length !== 0;
+
+    appendMore();
+  }
+
+  function appendMore() {
+    if (rendered >= activeList.length) return;
+    const next = activeList.slice(rendered, rendered + PAGE_SIZE);
+    rendered += next.length;
+    $results.insertAdjacentHTML("beforeend", next.map(rowHtml).join(""));
+  }
+
+  // ---------------------------
+  // Picked rows (duplicate allowed)
+  // ---------------------------
+  function makePickedRow(item, song) {
     return `
-      <div class="pl-pickedRow" data-id="${song.id}">
+      <div class="pl-pickedRow" data-key="${item.key}" data-id="${song.id}">
         <img class="pl-pickedRow__cover" src="${coverUrlOf(song)}" alt="" loading="lazy"
              onerror="this.style.display='none'; this.parentElement.classList.add('no-cover');" />
         <div class="pl-pickedRow__text">
@@ -141,10 +286,51 @@
     `;
   }
 
+  function isDuplicateId(id) {
+    return pickedItems.some(it => it.id === id);
+  }
+
+  async function addPicked(id) {
+    const song = songsById.get(id);
+    if (!song) return;
+
+    // ✅ 중복이면 큰 팝업
+    if (isDuplicateId(id)) {
+      const ok = await showDuplicateConfirm(song);
+      if (!ok) return;
+    }
+
+    const item = { key: `p${pickedSeq++}`, id };
+    pickedItems.push(item);
+
+    $pickedList.insertAdjacentHTML("beforeend", makePickedRow(item, song));
+    updatePickedCount();
+    initSortable(); // 새 항목 추가 후 보정
+
+    toast("green", `"${song.title}" 곡을 담았어요`);
+  }
+
+  function removePickedByKey(key) {
+    const idx = pickedItems.findIndex(it => it.key === key);
+    if (idx < 0) return;
+
+    const removed = pickedItems[idx];
+    pickedItems.splice(idx, 1);
+
+    const row = $pickedList.querySelector(`.pl-pickedRow[data-key="${key}"]`);
+    if (row) row.remove();
+
+    updatePickedCount();
+
+    const song = songsById.get(removed.id);
+    toast("red", `"${song?.title || "해당 곡"}" 곡을 삭제했어요`);
+  }
+
   // 드래그 후 실제 순서 동기화(DOM 기준)
   function syncOrderFromDOM() {
-    pickedOrder = [...$pickedList.querySelectorAll(".pl-pickedRow")]
-      .map(el => Number(el.dataset.id));
+    const keys = [...$pickedList.querySelectorAll(".pl-pickedRow")].map(el => String(el.dataset.key || ""));
+    const byKey = new Map(pickedItems.map(it => [it.key, it]));
+    pickedItems = keys.map(k => byKey.get(k)).filter(Boolean);
     updatePickedCount();
   }
 
@@ -152,7 +338,6 @@
   function initSortable() {
     if (sortable) sortable.destroy();
 
-    // iOS/터치 환경은 fallback 강제(사파리 HTML5 DnD가 개같음 ㅠ)
     const isTouch = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
     const isiOS = /iP(ad|hone|od)/.test(navigator.platform)
       || (navigator.userAgent.includes("Mac") && isTouch);
@@ -166,59 +351,33 @@
       chosenClass: "is-chosen",
       dragClass: "is-drag",
 
-      // ✅ 핵심: 드래그 중 “손/커서 따라오기”는 CSS에서 transition 끈 게 메인 해결책.
-      // + iOS에서만 fallback 강제
       forceFallback: isiOS,
       fallbackOnBody: true,
       fallbackTolerance: 0,
 
-      // 드래그 시작/끝에 클래스 확실히(혹시 꼬이면 정리)
-      onStart: () => {},
       onEnd: () => syncOrderFromDOM(),
     });
   }
 
-  function addPicked(id) {
-    if (pickedSet.has(id)) return;
-
-    const song = songs.find(s => s.id === id);
-    if (!song) return;
-
-    pickedSet.add(id);
-    pickedOrder.push(id);
-
-    $pickedList.insertAdjacentHTML("beforeend", makePickedRow(song));
-    updatePickedCount();
-    initSortable(); // 새 항목 추가 후 보정
-  }
-
-  function removePicked(id) {
-    if (!pickedSet.has(id)) return;
-
-    pickedSet.delete(id);
-    pickedOrder = pickedOrder.filter(x => x !== id);
-
-    const row = $pickedList.querySelector(`.pl-pickedRow[data-id="${id}"]`);
-    if (row) row.remove();
-
-    updatePickedCount();
-  }
-
   function bind() {
+    const rerender = () => {
+      open();
+      renderResults(filterSongs($q.value), true);
+    };
+
     $field.addEventListener("click", () => {
       $q.focus();
-      open();
-      renderResults(filterSongs($q.value));
+      rerender();
     });
 
-    $q.addEventListener("focus", () => {
-      open();
-      renderResults(filterSongs($q.value));
-    });
+    $q.addEventListener("focus", rerender);
+    $q.addEventListener("input", rerender);
 
-    $q.addEventListener("input", () => {
-      open();
-      renderResults(filterSongs($q.value));
+    // ✅ 드롭다운 무한 스크롤
+    $ddList.addEventListener("scroll", () => {
+      if (rendered >= activeList.length) return;
+      const nearBottom = $ddList.scrollTop + $ddList.clientHeight >= $ddList.scrollHeight - 160;
+      if (nearBottom) appendMore();
     });
 
     $results.addEventListener("click", (e) => {
@@ -233,11 +392,11 @@
       if (!rm) return;
       const row = e.target.closest(".pl-pickedRow");
       if (!row) return;
-      removePicked(Number(row.dataset.id));
+      removePickedByKey(String(row.dataset.key || ""));
     });
 
     document.addEventListener("click", (e) => {
-      const inside = e.target.closest(".pl-search") || e.target.closest(".pl-dd");
+      const inside = e.target.closest(".pl-search") || e.target.closest(".pl-dd") || e.target.closest(".pl-modal__card");
       if (!inside) close();
     });
 
@@ -246,16 +405,17 @@
     });
 
     $confirm.addEventListener("click", () => {
-      // TODO: 여기서 pickedOrder로 토큰 생성/공유 링크 만들기
-      alert(`담은 곡: ${pickedOrder.length}곡`);
-      console.log("pickedOrder:", pickedOrder);
+      // TODO: 여기서 pickedItems.map(x=>x.id)로 토큰 생성/공유 링크 만들기
+      const ids = pickedItems.map(x => x.id);
+      alert(`담은 곡: ${ids.length}곡`);
+      console.log("pickedIds:", ids);
     });
   }
 
   (async function init() {
     await loadSongs();
     bind();
-    renderResults(songs);
+    renderResults(songs, true);
     updatePickedCount();
     initSortable();
   })();
